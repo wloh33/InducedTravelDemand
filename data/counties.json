@@ -1,39 +1,311 @@
 [
-  "ALAMEDA",
-  "BUTTE",
-  "CONTRA COSTA",
-  "EL DORADO",
-  "FRESNO",
-  "IMPERIAL",
-  "KERN",
-  "KINGS",
-  "LOS ANGELES",
-  "MADERA",
-  "MARIN",
-  "MERCED",
-  "MONTEREY",
-  "NAPA",
-  "ORANGE",
-  "PLACER",
-  "RIVERSIDE",
-  "SACRAMENTO",
-  "SAN BENITO",
-  "SAN BERNARDINO",
-  "SAN DIEGO",
-  "SAN FRANCISCO",
-  "SAN JOAQUIN ",
-  "SAN LUIS OBISPO",
-  "SAN MATEO",
-  "SANTA BARBARA",
-  "SANTA CLARA",
-  "SANTA CRUZ",
-  "SHASTA",
-  "SOLANO",
-  "SONOMA",
-  "STANISLAUS",
-  "SUTTER",
-  "TULARE",
-  "VENTURA",
-  "YOLO",
-  "YUBA"
+  {
+    "county": "ALAMEDA",
+    "vmt1": 7930,
+    "vmt2": 786,
+    "lanemiles1": 953,
+    "lanemiles2": 129
+
+  },
+  {
+    "county": "ALPINE"
+  },
+  {
+    "county": "AMADOR"
+  },
+  {
+    "county": "BUTTE",
+    "vmt2": 35,
+    "lanemiles2": 15
+  },
+  {
+    "county": "CALAVERAS"
+  },
+  {
+    "county": "COLUSA",
+    "vmt1": 378,
+    "lanemiles1": 139
+  },
+  {
+    "county": "CONTRA COSTA",
+    "vmt1": 2767,
+    "vmt2": 1946,
+    "lanemiles1": 363,
+    "lanemiles2": 250
+  },
+  {
+    "county": "DEL NORTE"
+  },
+  {
+    "county": "EL DORADO",
+    "vmt2": 414,
+    "lanemiles2": 80
+  },
+  {
+    "county": "FRESNO",
+    "vmt1": 947,
+    "vmt2": 2068,
+    "lanemiles1": 265,
+    "lanemiles2": 382
+  },
+  {
+    "county": "GLENN",
+    "vmt1": 289,
+    "lanemiles1": 115
+  },
+  {
+    "county": "HUMBOLDT"
+  },
+  {
+    "county": "IMPERIAL",
+    "vmt1": 570,
+    "lanemiles1": 376
+  },
+  {
+    "county": "INYO"
+  },
+  {
+    "county": "KERN",
+    "vmt1": 1344,
+    "vmt2": 2405,
+    "lanemiles1": 387,
+    "lanemiles2": 760
+  },
+  {
+    "county": "KINGS",
+    "vmt1": 356,
+    "vmt2": 202,
+    "lanemiles1": 107,
+    "lanemiles2": 66
+  },
+  {
+    "county": "LAKE"
+  },
+  {
+    "county": "LASSEN"
+  },
+  {
+    "county": "LOS ANGELES",
+    "vmt1": 23604,
+    "vmt2": 13572,
+    "lanemiles1": 2759,
+    "lanemiles2": 1710
+  },
+  {
+    "county": "MADERA",
+    "vmt2": 690,
+    "lanemiles2": 123
+  },
+  {
+    "county": "MARIN",
+    "vmt1": 176,
+    "vmt2": 1502,
+    "lanemiles1": 27,
+    "lanemiles2": 230
+  },
+  {
+    "county": "MARIPOSA"
+  },
+  {
+    "county": "MENDOCINO",
+    "vmt2": 1,
+    "lanemiles2": 1
+  },
+  {
+    "county": "MERCED",
+    "vmt1": 393,
+    "vmt2": 687,
+    "lanemiles1": 129,
+    "lanemiles2": 162
+  },
+  {
+    "county": "MODOC"
+  },
+  {
+    "county": "MONO"
+  },
+  {
+    "county": "MONTEREY",
+    "vmt2": 1592,
+    "lanemiles2": 494
+  },
+  {
+    "county": "NAPA",
+    "vmt2": 182,
+    "lanemiles2": 40
+  },
+  {
+    "county": "NEVADA",
+    "vmt1": 321,
+    "lanemiles1": 148
+  },
+  {
+    "county": "ORANGE",
+    "vmt1": 6657,
+    "vmt2": 6060,
+    "lanemiles1": 756,
+    "lanemiles2": 901
+  },
+  {
+    "county": "PLACER",
+    "vmt1": 1392,
+    "vmt2": 251,
+    "lanemiles1": 325,
+    "lanemiles2": 43
+  },
+  {
+    "county": "PLUMAS"
+  },
+  {
+    "county": "RIVERSIDE",
+    "vmt1": 7036,
+    "vmt2": 2932,
+    "lanemiles1": 1303,
+    "lanemiles2": 367
+  },
+  {
+    "county": "SACRAMENTO",
+    "vmt1": 2472,
+    "vmt2": 2889,
+    "lanemiles1": 355,
+    "lanemiles2": 390
+  },
+  {
+    "county": "SAN BENITO",
+    "vmt2": 123,
+    "lanemiles2": 25
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "vmt1": 8520,
+    "vmt2": 2657,
+    "lanemiles1": 1977,
+    "lanemiles2": 383
+  },
+  {
+    "county": "SAN DIEGO",
+    "vmt1": 11580,
+    "vmt2": 4742,
+    "lanemiles1": 1687,
+    "lanemiles2": 703
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "vmt1": 466,
+    "vmt2": 720,
+    "lanemiles1": 63,
+    "lanemiles2": 77
+  },
+  {
+    "county": "SAN JOAQUIN",
+    "vmt1": 2013,
+    "vmt2": 1436,
+    "lanemiles1": 402,
+    "lanemiles2": 248
+  },
+  {
+    "county": "SAN LUIS OBISPO",
+    "vmt2": 1360,
+    "lanemiles2": 281
+  },
+  {
+    "county": "SAN MATEO",
+    "vmt1": 1432,
+    "vmt2": 2637,
+    "lanemiles1": 246,
+    "lanemiles2": 324
+  },
+  {
+    "county": "SANTA BARBARA",
+    "vmt2": 1581,
+    "lanemiles2": 401
+  },
+  {
+    "county": "SANTA CLARA",
+    "vmt1": 2546,
+    "vmt2": 4787,
+    "lanemiles1": 341,
+    "lanemiles2": 640
+  },
+  {
+    "county": "SANTA CRUZ",
+    "vmt2": 705,
+    "lanemiles2": 120
+  },
+  {
+    "county": "SHASTA",
+    "vmt1": 711,
+    "vmt2": 153,
+    "lanemiles1": 341,
+    "lanemiles2": 87
+  },
+  {
+    "county": "SIERRA",
+    "vmt1": 44,
+    "lanemiles1": 16
+  },
+  {
+    "county": "SISKIYOU",
+    "vmt1": 394,
+    "lanemiles1": 296
+  },
+  {
+    "county": "SOLANO",
+    "vmt1": 3044,
+    "vmt2": 174,
+    "lanemiles1": 464,
+    "lanemiles2": 36
+  },
+  {
+    "county": "SONOMA",
+    "vmt2": 1607,
+    "lanemiles2": 278
+  },
+  {
+    "county": "STANISLAUS",
+    "vmt1": 410,
+    "vmt2": 944,
+    "lanemiles1": 114,
+    "lanemiles2": 150
+  },
+  {
+    "county": "SUTTER",
+    "vmt2": 221,
+    "lanemiles2": 75
+  },
+  {
+    "county": "TEHAMA",
+    "vmt1": 487,
+    "vmt2": 10,
+    "lanemiles1": 170,
+    "lanemiles2": 6
+  },
+  {
+    "county": "TRINITY"
+  },
+  {
+    "county": "TULARE",
+    "vmt2": 1377,
+    "lanemiles2": 298
+  },
+  {
+    "county": "TUOLUMNE"
+  },
+  {
+    "county": "VENTURA",
+    "vmt2": 2891,
+    "lanemiles2": 431
+  },
+  {
+    "county": "YOLO",
+    "vmt1": 1210,
+    "vmt2": 120,
+    "lanemiles1": 302,
+    "lanemiles2": 48
+  },
+  {
+    "county": "YUBA",
+    "vmt2": 130,
+    "lanemiles2": 48
+  }
 ]
