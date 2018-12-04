@@ -17,17 +17,17 @@
         <h1 class="mt-4 mb-4">Induced Travel Calculator</h1>
         <div class="card">
           <div class="card-body">
-            <form>
+            <form id="vmtForm">
               <h4>1. Select Facility Type</h4>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="facilityType" value="interstate">
-                <label class="form-check-label" for="facilityType1">
+                <input class="form-check-input" type="radio" id="facilityTypeInterstate" name="facilityType" value="interstate">
+                <label class="form-check-label" for="facilityTypeInterstate">
                   Interstate Highway
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="facilityType" value="state_route">
-                <label class="form-check-label" for="facilityType2">
+                <input class="form-check-input" type="radio" id="facilityTypeStateRoute" name="facilityType" value="state_route">
+                <label class="form-check-label" for="facilityTypeStateRoute">
                   State Route
                 </label>
               </div>
@@ -36,7 +36,7 @@
                   <h4>2. Select County</h4>
                 </label>
                 <select class="form-control" id="selectCounty">
-                  <option>Select County</option>
+                  <option value="">Select County</option>
                   <option>Alameda</option>
                   <option>Butte</option>
                   <option>Contra Costa</option>
@@ -81,7 +81,7 @@
                   <h4>2. Select MSA</h4>
                 </label>
                 <select class="form-control" id="selectMSA">
-                  <option>Select MSA</option>
+                  <option value="">Select MSA</option>
                   <option>Bakersfield</option>
                   <option>Chico</option>
                   <option>El Centro</option>
@@ -114,7 +114,10 @@
                 <label for="inputLaneMiles">
                   <h4>3. Input Total Lane Miles Added</h4>
                 </label>
-                <textarea class="form-control" id="inputLaneMiles" rows="1"></textarea>
+                <input class="form-control" id="inputLaneMiles" />
+                <div class="invalid-feedback">
+                  Please enter a valid number of Lane Miles Added
+                </div>
                 <button class="btn btn-primary mt-4 mb-2" type="submit">Calculate</button>
                 <small id="calculateHelpBlock" class="form-text text-muted">
                   Click “Calculate” to get annual induced VMT estimate
