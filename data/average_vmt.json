@@ -1,0 +1,243 @@
+[
+  {
+    "county": "ALAMEDA",
+    "type1": 7930,
+    "type2": 786
+  },
+  {
+    "county": "ALPINE"
+  },
+  {
+    "county": "AMADOR"
+  },
+  {
+    "county": "BUTTE",
+    "type2": 35
+  },
+  {
+    "county": "CALAVERAS"
+  },
+  {
+    "county": "COLUSA",
+    "type1": 378
+  },
+  {
+    "county": "CONTRA COSTA",
+    "type1": 2767,
+    "type2": 1946
+  },
+  {
+    "county": "DEL NORTE"
+  },
+  {
+    "county": "EL DORADO",
+    "type2": 414
+  },
+  {
+    "county": "FRESNO",
+    "type1": 947,
+    "type2": 2068
+  },
+  {
+    "county": "GLENN",
+    "type1": 289
+  },
+  {
+    "county": "HUMBOLDT"
+  },
+  {
+    "county": "IMPERIAL",
+    "type1": 570
+  },
+  {
+    "county": "INYO"
+  },
+  {
+    "county": "KERN",
+    "type1": 1344,
+    "type2": 2405
+  },
+  {
+    "county": "KINGS",
+    "type1": 356,
+    "type2": 202
+  },
+  {
+    "county": "LAKE"
+  },
+  {
+    "county": "LASSEN"
+  },
+  {
+    "county": "LOS ANGELES",
+    "type1": 23604,
+    "type2": 13572
+  },
+  {
+    "county": "MADERA",
+    "type2": 690
+  },
+  {
+    "county": "MARIN",
+    "type1": 176,
+    "type2": 1502
+  },
+  {
+    "county": "MARIPOSA"
+  },
+  {
+    "county": "MENDOCINO",
+    "type2": 1
+  },
+  {
+    "county": "MERCED",
+    "type1": 393,
+    "type2": 687
+  },
+  {
+    "county": "MODOC"
+  },
+  {
+    "county": "MONO"
+  },
+  {
+    "county": "MONTEREY",
+    "type2": 1592
+  },
+  {
+    "county": "NAPA",
+    "type2": 182
+  },
+  {
+    "county": "NEVADA",
+    "type1": 321
+  },
+  {
+    "county": "ORANGE",
+    "type1": 6657,
+    "type2": 6060
+  },
+  {
+    "county": "PLACER",
+    "type1": 1392,
+    "type2": 251
+  },
+  {
+    "county": "PLUMAS"
+  },
+  {
+    "county": "RIVERSIDE",
+    "type1": 7036,
+    "type2": 2932
+  },
+  {
+    "county": "SACRAMENTO",
+    "type1": 2472,
+    "type2": 2889
+  },
+  {
+    "county": "SAN BENITO",
+    "type2": 123
+  },
+  {
+    "county": "SAN BERNARDINO",
+    "type1": 8520,
+    "type2": 2657
+  },
+  {
+    "county": "SAN DIEGO",
+    "type1": 11580,
+    "type2": 4742
+  },
+  {
+    "county": "SAN FRANCISCO",
+    "type1": 466,
+    "type2": 720
+  },
+  {
+    "county": "SAN JOAQUIN",
+    "type1": 2013,
+    "type2": 1436
+  },
+  {
+    "county": "SAN LUIS OBISPO",
+    "type2": 1360
+  },
+  {
+    "county": "SAN MATEO",
+    "type1": 1432,
+    "type2": 2637
+  },
+  {
+    "county": "SANTA BARBARA",
+    "type2": 1581
+  },
+  {
+    "county": "SANTA CLARA",
+    "type1": 2546,
+    "type2": 4787
+  },
+  {
+    "county": "SANTA CRUZ",
+    "type2": 705
+  },
+  {
+    "county": "SHASTA",
+    "type1": 711,
+    "type2": 153
+  },
+  {
+    "county": "SIERRA",
+    "type1": 44
+  },
+  {
+    "county": "SISKIYOU",
+    "type1": 394
+  },
+  {
+    "county": "SOLANO",
+    "type1": 3044,
+    "type2": 174
+  },
+  {
+    "county": "SONOMA",
+    "type2": 1607
+  },
+  {
+    "county": "STANISLAUS",
+    "type1": 410,
+    "type2": 944
+  },
+  {
+    "county": "SUTTER",
+    "type2": 221
+  },
+  {
+    "county": "TEHAMA",
+    "type1": 487,
+    "type2": 10
+  },
+  {
+    "county": "TRINITY"
+  },
+  {
+    "county": "TULARE",
+    "type2": 1377
+  },
+  {
+    "county": "TUOLUMNE"
+  },
+  {
+    "county": "VENTURA",
+    "type2": 2891
+  },
+  {
+    "county": "YOLO",
+    "type1": 1210,
+    "type2": 120
+  },
+  {
+    "county": "YUBA",
+    "type2": 130
+  }
+]

@@ -1,0 +1,129 @@
+[
+  {
+    "msa": "BAKERSFIELD",
+    "counties": ["KERN"]
+  },
+  {
+    "msa": "CHICO",
+    "counties": ["BUTTE"]
+  },
+  {
+    "msa": "EL CENTRO",
+    "counties": ["IMPERIAL"]
+  },
+  {
+    "msa": "FRESNO",
+    "counties": ["FRESNO"]
+  },
+  {
+    "msa": "HANFORD-CORCORAN",
+    "counties": ["KINGS"]
+  },
+  {
+    "msa": "LOS ANGELES-LONG BEACH-ANAHEIM",
+    "counties": [
+      "LOS ANGELES",
+      "ORANGE"
+    ]
+  },
+  {
+    "msa": "MADERA",
+    "counties": ["MADERA"]
+  },
+  {
+    "msa": "MERCED",
+    "counties": ["MERCED"]
+  },
+  {
+    "msa": "MODESTO",
+    "counties": ["STANISLAUS"]
+  },
+  {
+    "msa": "NAPA",
+    "counties": ["NAPA"]
+  },
+  {
+    "msa": "OXNARD-THOUSAND OAKS-VENTURA",
+    "counties": ["VENTURA"]
+  },
+  {
+    "msa": "REDDING",
+    "counties": ["SHASTA"]
+  },
+  {
+    "msa": "RIVERSIDE-SAN BERNARDINO-ONTARIO",
+    "counties": [
+      "RIVERSIDE",
+      "SAN BERNARDINO"
+    ]
+  },
+  {
+    "msa": "SACRAMENTO-ROSEVILLE-ARDEN-ARCADE",
+    "counties": [
+      "EL DORADO",
+      "PLACER",
+      "SACRAMENTO",
+      "YOLO"
+    ]
+  },
+  {
+    "msa": "SALINAS",
+    "counties": ["MONTEREY"]
+  },
+  {
+    "msa": "SAN DIEGO-CARLSBAD",
+    "counties": ["SAN DIEGO"]
+  },
+  {
+    "msa": "SAN FRANCISCO-OAKLAND-HAYWARD",
+    "counties": [
+      "SAN FRANCISCO",
+      "SAN MATEO",
+      "ALAMEDA",
+      "CONTRA COSTA",
+      "MARIN"
+    ]
+  },
+  {
+    "msa": "SAN JOSE-SUNNYVALE-SANTA CLARA",
+    "counties": [
+      "SAN BENITO",
+      "SANTA CLARA"
+    ]
+  },
+  {
+    "msa": "SAN LUIS OBISPO-PASO ROBLES-ARROYO GRANDE",
+    "counties": ["SAN LUIS OBISPO"]
+  },
+  {
+    "msa": "SANTA CRUZ-WATSONVILLE",
+    "counties": ["SANTA CRUZ"]
+  },
+  {
+    "msa": "SANTA MARIA-SANTA BARBARA",
+    "counties": ["SANTA BARBARA"]
+  },
+  {
+    "msa": "SANTA ROSA",
+    "counties": ["SONOMA"]
+  },
+  {
+    "msa": "STOCKTON-LODI",
+    "counties": ["SAN JOAQUIN"]
+  },
+  {
+    "msa": "VALLEJO-FAIRFIELD",
+    "counties": ["SOLANO"]
+  },
+  {
+    "msa": "VISALIA-PORTERVILLE",
+    "counties": ["TULARE"]
+  },
+  {
+    "msa": "YUBA CITY",
+    "counties": [
+      "SUTTER",
+      "YUBA"
+    ]
+  }
+]
