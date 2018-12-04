@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title>Induced Travel Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3 mt-4">
+        <h1 class="mt-4 mb-4">Induced Travel Calculator</h1>
+        <div class="card">
+          <div class="card-body">
+            </ul>
+            <form>
+              <h4>Select Facility Type</h4>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="facilityType" id="facilityType1" value="option1" checked>
+                <label class="form-check-label" for="facilityType1">
+                  Interstate Highway
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="facilityType" id="facilityType2" value="option2">
+                <label class="form-check-label" for="facilityType2">
+                  State Route
+                </label>
+              </div>
+              <div class="form-group mt-4">
+                <label for="selectGeography">
+                  <h4>Select Geography</h4>
+                </label>
+                <select class="form-control" id="selectGeography">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <small id="geographyHelpBlock" class="form-text text-muted">
+                (MSA for interstate highway projects, or county for state route projects)
+              </small>
+              <div class="form-group mt-4">
+                <label for="inputLaneMiles">
+                  <h4>Input Total Lane Miles Added</h4>
+                </label>
+                <textarea class="form-control" id="inputLaneMiles" rows="1"></textarea>
+              </div>
+              <button class="btn btn-primary mt-4 mb-2" type="submit">Calculate</button>
+              <small id="calculateHelpBlock" class="form-text text-muted">
+                Click “Calculate” to get annual induced VMT estimate
+              </small>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
