@@ -43,29 +43,28 @@
   </nav>
   <div class="container">
     <div class="row">
-      <div class="offset-md-1 col-md-10">
-      <h1 class="mt-4">About the Induced Travel Calculator</h1>
+      <div class="offset-md-2 col-md-8 mt-md-5 mt-2">
+        <h2>Background - Induced Travel</h2>
+        <p>Attempts to address traffic congestion commonly rely on increasing roadway capacity, e.g. by building new roadways or adding lanes to existing facilities. But studies examining that approach indicate it is only a temporary fix. They
+          consistently show that adding roadway capacity in congested areas actually increases network-wide vehicle miles traveled (VMT) by a nearly equivalent proportion within a few years, reducing or negating the initial congestion relief. That
+          increase in VMT is called “induced travel.”</p>
 
-      <p>Attempts to address traffic congestion commonly rely on increasing roadway capacity, e.g. by building new roadways or adding lanes to existing facilities. But studies examining that approach indicate it is only a temporary fix. They
-        consistently show that adding roadway capacity in congested areas actually increases network-wide vehicle miles traveled (VMT) by a nearly equivalent proportion within a few years, reducing or negating the initial congestion relief. That
-        increase in VMT is called “induced travel.”</p>
+        <p>The induced travel concept is not new (see the “fundamental law of highway congestion” <a href="https://trid.trb.org/view/694596">Anthony Downs suggested in 1962</a>). Indeed, it is explained by the bedrock economic principles of supply and demand: “adding capacity decreases travel
+          time, in effect lowering the ‘price’ of driving; when prices go down, the quantity of driving goes up” (<a href="https://www.arb.ca.gov/cc/sb375/policies/hwycapacity/highway_capacity_brief.pdf">Handy and Boarnet, 2014a</a>). But how big is the effect? What are the elasticities of VMT with respect to lane miles (defined as the percent
+          change in VMT divided by the percent change in lane miles)?</p>
 
-      <p>The induced travel concept is not new (see the “fundamental law of highway congestion” <a href="https://trid.trb.org/view/694596">Anthony Downs suggested in 1962</a>). Indeed, it is explained by the bedrock economic principles of supply and demand: “adding capacity decreases travel
-        time, in effect lowering the ‘price’ of driving; when prices go down, the quantity of driving goes up” (<a href="https://www.arb.ca.gov/cc/sb375/policies/hwycapacity/highway_capacity_brief.pdf">Handy and Boarnet, 2014a</a>). But how big is the effect? What are the elasticities of VMT with respect to lane miles (defined as the percent
-        change in VMT divided by the percent change in lane miles)?</p>
+        <p>A slew of studies beginning in the late 1990s have estimated similar elasticities, despite using a range of methods to control other VMT-inducing factors and the bi-directional relationship between VMT and capacity expansion. In general,
+          the studies show that a 10-percent increase in capacity is likely to increase network-wide VMT by 6 to 10 percent (i.e. an elasticity of 0.6 to 1.0) in the long run (5 to 10 years), with greater elasticities for expansions of major highways
+          (e.g. on interstates) than for capacity increases on other roadways. These longer-term elasticities account for short-run shifts in travel (as people take advantage of the increased capacity and travel speed by driving more), as well as
+          longer-run dispersion of residential and business location and development.</p>
 
-      <p>A slew of studies beginning in the late 1990s have estimated similar elasticities, despite using a range of methods to control other VMT-inducing factors and the bi-directional relationship between VMT and capacity expansion. In general,
-        the studies show that a 10-percent increase in capacity is likely to increase network-wide VMT by 6 to 10 percent (i.e. an elasticity of 0.6 to 1.0) in the long run (5 to 10 years), with greater elasticities for expansions of major highways
-        (e.g. on interstates) than for capacity increases on other roadways. These longer-term elasticities account for short-run shifts in travel (as people take advantage of the increased capacity and travel speed by driving more), as well as
-        longer-run dispersion of residential and business location and development.</p>
+        <p>For more information on the induced travel and other impacts of highway expansion, see Handy (<a href="www.dot.ca.gov/newtech/researchreports/reports/2015/10-12-2015-NCST_Brief_InducedTravel_CS6_v3.pdf">2015</a>) and Handy and Boarnet (2014a). For a summary of key studies estimating the elasticity of VMT with respect to lane miles, see Handy and
+          Boarnet (<a href="https://www.arb.ca.gov/cc/sb375/policies/hwycapacity/highway_capacity_bkgd.pdf">2014b</a>).</p>
 
-      <p>For more information on the induced travel and other impacts of highway expansion, see Handy (<a href="www.dot.ca.gov/newtech/researchreports/reports/2015/10-12-2015-NCST_Brief_InducedTravel_CS6_v3.pdf">2015</a>) and Handy and Boarnet (2014a). For a summary of key studies estimating the elasticity of VMT with respect to lane miles, see Handy and
-        Boarnet (<a href="https://www.arb.ca.gov/cc/sb375/policies/hwycapacity/highway_capacity_bkgd.pdf">2014b</a>).</p>
+        <h2>Calculator Purpose and Scope</h2>
 
-      <h1>Calculator Purpose and Scope</h1>
-
-      <p>This calculator allows users to estimate the annual VMT induced by adding general-purpose lane miles to interstate or state route highways in one of California’s urbanized counties (counties within a metropolitan statistical area (MSA)). To
-        obtain an induced VMT estimate for a highway capacity expansion project, users need only enter the project length (in lane miles added) and geography (MSA for interstate lane additions; county for state route projects).
+        <p>This calculator allows users to estimate the annual VMT induced by adding general-purpose lane miles to interstate or state route highways in one of California’s urbanized counties (counties within a metropolitan statistical area (MSA)). To
+          obtain an induced VMT estimate for a highway capacity expansion project, users need only enter the project length (in lane miles added) and geography (MSA for interstate lane additions; county for state route projects).
 
         Calculator use is not appropriate in all circumstances or for all purposes, however. The following caveats apply:
         <ul>
@@ -84,7 +83,7 @@
           <li>All estimates account for the possibility that some of increased VMT on the expanded facility is traffic diverted from other types of roads in the network. In general, the studies show that “capacity expansion leads to a net increase
             in VMT, not simply a shifting of VMT from one road to another” (Handy and Boarnet, 2014a).</li>
         </ul>
-        <h1>Data and Elasticities</h1>
+        <h2>Data and Elasticities</h2>
 
         <p>To estimate induced VMT for user-specified capacity expansion projects, the calculator simply solves this equation:</p>
         <h4 class="mb-3"><em>%∆ Lane Miles x Existing VMT x Elasticity = Project-Induced VMT</em></h4>
@@ -118,6 +117,7 @@
           capacity expansions. The calculator also uses a similar VMT elasticity for state routes (0.75) as Cervero and Hanson (2002) find for state highways (0.79), and within the range Duranton and Turner (2011) found for non-interstate “major
           roads” in the urbanized areas of MSAs (0.67 to 0.89), albeit decremented to account for the (small) potential substitution effect discussed in Duranton and Turner (2011).</p>
 
+        <a href="/index.html" class="btn btn-blue mb-3">&laquo; Back to Calculator</a>
       </div>
     </div>
   </div>
