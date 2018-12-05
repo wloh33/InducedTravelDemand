@@ -1,9 +1,6 @@
 var counties
 var msas
 
-$.getJSON('data/counties.json', function(data) { counties = data })
-$.getJSON('data/msas.json', function(data) { msas = data })
-
 function sumCounties(countyData, facilityType) {
   return countyData.reduce(function(memo, county) {
     if (facilityType === 'interstate') {
@@ -141,3 +138,16 @@ $('#vmtForm').submit(function(e) {
 
   $('#results').slideDown();
 })
+
+// On page load, get data
+$.getJSON('data/counties.json', function(data) { counties = data })
+$.getJSON('data/msas.json', function(data) { msas = data })
+
+// On page load, if there is a selection, trigger change
+if ($('[name="facilityType"]:checked').val()) {
+  $('[name="facilityType"]').trigger('change')
+}
+
+if ($('#selectMSA:visible, #selectCounty:visible').val()) {
+  $('#selectMSA:visible, #selectCounty:visible').trigger('change')
+}
