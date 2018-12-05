@@ -1,0 +1,40 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.results-main {
+  margin-bottom: 20px;
+  text-align: center;
+  background: #fbff4d;
+  padding: 8px 0;
+}
+
+.results-main-text {
+  font-weight: bold;
+  color: #002855;
+  font-size: 40px;
+  line-height: 1;
+}
+
+.results-text {
+  font-size: 20px;
+}
+
+.result-value {
+  font-weight: bold;
+  font-size: 24px;
+  color: #002855;
+  background: #fbff4d;
+  padding: 0 4px;
+}
+
+.bg-blue {
+  background-color: #002855;
+  border-bottom: 2px solid #DAAA00;
+}
+
+.btn-blue {
+  color: #fff;
+  background-color: #002855;
+  border-color: #002855;
+}
