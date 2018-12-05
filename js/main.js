@@ -44,6 +44,14 @@ function formatCountyList(countyData) {
   }, '')
 }
 
+function pluralize(singular, plural, count) {
+  if (count === 1) {
+    return singular
+  }
+
+  return plural
+}
+
 $('[name="facilityType"]').change(function() {
   var facilityType = $('[name="facilityType"]:checked').val()
   if (facilityType === 'interstate') {
@@ -117,7 +125,7 @@ $('#vmtForm').submit(function(e) {
     $('#elasticity').text('1.0')
     $('#newLaneMiles').text(newLaneMiles + ' lane miles')
     $('#newVMT').text(newVMT + ' million')
-    $('#msaNotes').html('<p><small>' + msa + ' MSA consists of ' + countyData.length + ' county (' + formatCountyList(countyData) + ').</small></p>')
+    $('#msaNotes').html('<p><small>' + msa + ' MSA consists of ' + countyData.length + ' ' + pluralize('county','counties', countyData.length) + ' (' + formatCountyList(countyData) + ').</small></p>')
     $('#geographyNameNone').text(msa + ' MSA')
   } else if (facilityType === 'state_route') {
     $('#geographyName').text(county + ' County')
