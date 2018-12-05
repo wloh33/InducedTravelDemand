@@ -43,29 +43,28 @@
   </nav>
   <div class="container">
     <div class="row">
-      <div class="col-md-6 offset-md-3 mt-4">
-        <h1 class="mt-4 mb-4">Induced Travel Calculator</h1>
+      <div class="col-md-6 offset-md-3 mt-md-5 mt-2">
         <div class="card">
           <div class="card-body">
             <form id="vmtForm">
-              <h4>1. Select Facility Type</h4>
+              <h4>1. Select facility type</h4>
               <div class="form-check">
                 <input class="form-check-input" type="radio" id="facilityTypeInterstate" name="facilityType" value="interstate">
                 <label class="form-check-label" for="facilityTypeInterstate">
-                  Interstate Highway
+                  Interstate highway
                 </label>
               </div>
               <div class="form-check">
                 <input class="form-check-input" type="radio" id="facilityTypeStateRoute" name="facilityType" value="state_route">
                 <label class="form-check-label" for="facilityTypeStateRoute">
-                  State Route
+                  State route
                 </label>
               </div>
-              <div class="form-group mt-4" style="display:none;">
+              <div class="form-group mt-4" style="display: none;">
                 <label for="selectCounty">
-                  <h4>2. Select County</h4>
+                  <h4>2. Select county</h4>
                 </label>
-                <select class="form-control" id="selectCounty">
+                <select class="form-control form-control-lg" id="selectCounty">
                   <option value="">Select County</option>
                   <option>Alameda</option>
                   <option>Butte</option>
@@ -106,11 +105,11 @@
                   <option>Yuba</option>
                 </select>
               </div>
-              <div class="form-group mt-4" style="display:none;">
+              <div class="form-group mt-4" style="display: none;">
                 <label for="selectMSA">
                   <h4>2. Select MSA</h4>
                 </label>
-                <select class="form-control" id="selectMSA">
+                <select class="form-control form-control-lg" id="selectMSA">
                   <option value="">Select MSA</option>
                   <option>Bakersfield</option>
                   <option>Chico</option>
@@ -140,27 +139,67 @@
                   <option>Yuba City</option>
                 </select>
               </div>
-              <div class="form-group mt-4" style="display:none;">
+              <div class="form-group mt-4" style="display: none;">
                 <label for="inputLaneMiles">
-                  <h4>3. Input Total Lane Miles Added</h4>
+                  <h4>3. Input total lane miles added</h4>
                 </label>
-                <input class="form-control" id="inputLaneMiles" />
-                <div class="invalid-feedback">
-                  Please enter a valid number of Lane Miles Added
+                <div class="input-group">
+                  <input class="form-control form-control-lg" id="inputLaneMiles" style="max-width: 100px;" />
+                  <div class="input-group-append">
+                    <span class="input-group-text">miles</span>
+                  </div>
+                  <div class="invalid-feedback">
+                    Please enter a valid number of lane miles
+                  </div>
                 </div>
-                <button class="btn btn-primary mt-4 mb-2" type="submit">Calculate</button>
-                <small id="calculateHelpBlock" class="form-text text-muted">
-                  Click “Calculate” to get annual induced VMT estimate
-                </small>
+                <button class="btn btn-blue mt-4 btn-block" type="submit">Calculate Induced Travel</button>
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div id="results" class="card mt-3" style="display: none;">
+          <div class="card-header font-weight-bold bg-blue text-white">Results</div>
+          <div class="card-body" id="resultsExist">
+            <div class="results-main">
+              <div id="resultsMain" class="results-main-text"></div>
+              <small>(Vehicle Miles Travelled)</small>
+            </div>
+            <div class="results-text">
+              <p><span class="result-value" id="geographyName"></span> currently has <span class="result-value" id="currentLaneMiles"></span> of <span id="facilityType"></span> on which <span class="result-value" id="currentVMT"></span> vehicle miles are travelled per year.</p>
+              <p>A project adding <span class="result-value" id="newLaneMiles"></span> would induce an additional <span class="result-value" id="newVMT"></span> vehicle miles travelled per year.</p>
+              <div id="msaNotes"></div>
+              <p><small>This calculation is using an elasticity of <span class="result-value" id="elasticity"></span>.</small></p>
+            </div>
+            <a href="about.html" class="btn btn-small btn-secondary">Read more about this calculator</a>
+
+            <hr>
+            <div class="notes">
+              The following caveats apply:
+              <ul>
+                <li>The calculator is limited to use for capacity expansions. It cannot be used to estimate VMT effects of capacity reductions or lane type conversions.</li>
+                <li>The calculator is limited to use for additions of general-purpose and high-occupancy vehicle (HOV) lanes.</li>
+                <li>The calculator is limited to use for lane additions on interstate highways and state route highways.</li>
+                <li>The calculator is limited to use in California’s 37 urbanized counties (counties within MSAs). The calculator cannot be used to assess the VMT effects of roadway expansions in California counties outside of MSAs, or in any geography outside California.</li>
+                <li>All estimates produced are long-run estimates of the induced VMT after 5 to 10 years. </li>
+                <li>All estimates account for the possibility that some of increased VMT on the expanded facility is traffic diverted from other types of roads in the network. In general, the studies show that “capacity expansion leads to a net increase in VMT, not simply a shifting of VMT from one road to another” (Handy and Boarnet, 2014a).</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card-body" id="resultsNone">
+            <p><span id="geographyNameNone"></span> does not have enough miles of interstate highway to use this calculator.</p>
+            <a href="about.html" class="btn btn-small btn-blue">Read more about this calculator</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js" integrity="sha256-7/yoZS3548fXSRXqc/xYzjsmuW3sFKzuvOCHd06Pmps=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
