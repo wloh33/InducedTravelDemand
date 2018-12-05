@@ -38,3 +38,9 @@ body {
   background-color: #002855;
   border-color: #002855;
 }
+
+.btn-blue:hover {
+  color: #fff;
+  background-color: #074183;
+  border-color: #074183;
+}
