@@ -13,10 +13,10 @@
   <meta name="theme-color" content="#ffffff">
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 
-  <title>Induced Travel Calculator</title>
+  <title>Induced Travel Calculator | Calculator</title>
 </head>
 
 <body>
@@ -32,7 +32,7 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">Calculator <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
@@ -43,21 +43,36 @@
   </nav>
   <div class="container">
     <div class="row">
-      <div class="col-md-6 offset-md-3 mt-md-5 mt-2">
+      <div class="col-md-8 offset-md-2 mt-4">
+          <h2>Overview</h2>
+          <p>This calculator allows users to estimate the VMT induced annually as a result of adding general-purpose or high-occupancy-vehicle (HOV) lane miles to roadways managed by the California Department of Transportation (Caltrans) in one of California’s urbanized counties (counties within a metropolitan statistical area (MSA)). The calculator applies only to Caltrans-managed facilities with Federal Highway Administration (FHWA) functional classifications of 1, 2 or 3 (see <a href="http://www.dot.ca.gov/hq/tsip/hseb/func_clas.html">Caltrans, 2019</a>). That corresponds to interstate highways (class 1), other freeways and expressways (class 2), and other principal arterials (class 3).</p>
+          
+          <p>To obtain an induced VMT estimate for a roadway capacity expansion project, enter the project length (in lane miles added) and geography (MSA for additions to interstates; county for additions to other Caltrans-managed class 2 or 3 facilities).</p>
+          
+          <p>More information on the calculator is provided in the About and Data tabs. The calculator tool is available for use below.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 offset-md-2 mt-4">
+          <h2>Calculator</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
         <div class="card">
           <div class="card-body">
             <form id="vmtForm">
               <h4>1. Select facility type</h4>
               <div class="form-check">
-                <input class="form-check-input" type="radio" id="facilityTypeInterstate" name="facilityType" value="interstate">
-                <label class="form-check-label" for="facilityTypeInterstate">
-                  Interstate highway
+                <input class="form-check-input" type="radio" id="facilityTypeClass1" name="facilityType" value="class1">
+                <label class="form-check-label" for="facilityTypeClass1">
+                  Interstate highway (class 1 facility)
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" id="facilityTypeStateRoute" name="facilityType" value="state_route">
-                <label class="form-check-label" for="facilityTypeStateRoute">
-                  State route
+                <input class="form-check-input" type="radio" id="facilityTypeClass2-3" name="facilityType" value="class2-3">
+                <label class="form-check-label" for="facilityTypeClass2-3">
+                  Class 2 or 3 facility
                 </label>
               </div>
               <div class="form-group mt-4" style="display: none;">
@@ -175,19 +190,6 @@
               <p><small>This calculation is using an elasticity of <span class="result-value" id="elasticity"></span>.</small></p>
             </div>
             <a href="about.html" class="btn btn-small btn-secondary">Read more about this calculator</a>
-
-            <hr>
-            <div class="notes">
-              The following caveats apply:
-              <ul>
-                <li>The calculator is limited to use for capacity expansions. It cannot be used to estimate VMT effects of capacity reductions or lane type conversions.</li>
-                <li>The calculator is limited to use for additions of general-purpose and high-occupancy vehicle (HOV) lanes.</li>
-                <li>The calculator is limited to use for lane additions on interstate highways and state route highways.</li>
-                <li>The calculator is limited to use in California’s 37 urbanized counties (counties within MSAs). The calculator cannot be used to assess the VMT effects of roadway expansions in California counties outside of MSAs, or in any geography outside California.</li>
-                <li>All estimates produced are long-run estimates of the induced VMT after 5 to 10 years. </li>
-                <li>All estimates account for the possibility that some of increased VMT on the expanded facility is traffic diverted from other types of roads in the network. In general, the studies show that “capacity expansion leads to a net increase in VMT, not simply a shifting of VMT from one road to another” (Handy and Boarnet, 2014a).</li>
-              </ul>
-            </div>
           </div>
           <div class="card-body" id="resultsNone">
             <p><span id="geographyNameNone"></span> does not have enough miles of interstate highway to use this calculator.</p>
@@ -200,8 +202,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js" integrity="sha256-7/yoZS3548fXSRXqc/xYzjsmuW3sFKzuvOCHd06Pmps=" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 </body>
 

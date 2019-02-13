@@ -3,7 +3,7 @@ var msas
 
 function sumCounties(countyData, facilityType) {
   return countyData.reduce(function(memo, county) {
-    if (facilityType === 'interstate') {
+    if (facilityType === 'class1') {
       if (county.vmt1) {
         memo.vmt += county.vmt1
       }
@@ -11,7 +11,7 @@ function sumCounties(countyData, facilityType) {
       if (county.lanemiles1) {
         memo.laneMiles += county.lanemiles1
       }
-    } else if (facilityType === 'state_route') {
+    } else if (facilityType === 'class2-3') {
       if (county.vmt2) {
         memo.vmt += county.vmt2
       }
@@ -51,10 +51,10 @@ function pluralize(singular, plural, count) {
 
 $('[name="facilityType"]').change(function() {
   var facilityType = $('[name="facilityType"]:checked').val()
-  if (facilityType === 'interstate') {
+  if (facilityType === 'class1') {
     $('#selectMSA').parents('.form-group').slideDown()
     $('#selectCounty').parents('.form-group').hide()
-  } else if(facilityType === 'state_route') {
+  } else if(facilityType === 'class2-3') {
     $('#selectCounty').parents('.form-group').slideDown()
     $('#selectMSA').parents('.form-group').hide()
   }
@@ -95,26 +95,26 @@ $('#vmtForm').submit(function(e) {
 
   var countyData
 
-  if (facilityType === 'interstate') {
+  if (facilityType === 'class1') {
     var msaData = _.find(msas, {msa: msa.toUpperCase()})
 
     countyData = _.filter(counties, function(item) {
       return _.includes(msaData.counties, item.county)
     })
-  } else if (facilityType === 'state_route') {
+  } else if (facilityType === 'class2-3') {
     countyData = _.filter(counties, {county: county.toUpperCase()})
   }
 
   var data = sumCounties(countyData, facilityType)
-  var elasticity = facilityType === 'interstate' ? 1 : 0.75
+  var elasticity = facilityType === 'class1' ? 1 : 0.75
   var newVMT = Math.round(newLaneMiles / data.laneMiles * data.vmt * elasticity * 10) / 10
 
   $('#resultsNone').toggle(data.laneMiles === 0);
   $('#resultsExist').toggle(data.laneMiles !== 0);
 
-  $('#resultsMain').text(newVMT + ' million additional VMT')
+  $('#resultsMain').text(newVMT + ' million additional VMT/year')
 
-  if (facilityType === 'interstate') {
+  if (facilityType === 'class1') {
     $('#geographyName').text(msa + ' MSA')
     $('#facilityType').text('Interstate highway')
     $('#currentLaneMiles').text(data.laneMiles + ' lane miles')
@@ -124,9 +124,9 @@ $('#vmtForm').submit(function(e) {
     $('#newVMT').text(newVMT + ' million')
     $('#msaNotes').html('<p><small>' + msa + ' MSA consists of ' + countyData.length + ' ' + pluralize('county','counties', countyData.length) + ' (' + formatCountyList(countyData) + ').</small></p>')
     $('#geographyNameNone').text(msa + ' MSA')
-  } else if (facilityType === 'state_route') {
+  } else if (facilityType === 'class2-3') {
     $('#geographyName').text(county + ' County')
-    $('#facilityType').text('state route highway')
+    $('#facilityType').text('Caltrans-managed class 2 and 3 facilities')
     $('#currentLaneMiles').text(data.laneMiles + ' lane miles')
     $('#currentVMT').text(data.vmt + ' million')
     $('#elasticity').text('0.75')
