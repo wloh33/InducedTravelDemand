@@ -44,80 +44,71 @@
   <div class="container">
     <div class="row">
       <div class="offset-md-2 col-md-8 mt-md-5 mt-2">
-        <h2>Background - Induced Travel</h2>
+        <h2>Background on Induced Travel</h2>
         <p>Attempts to address traffic congestion commonly rely on increasing roadway capacity, e.g. by building new roadways or adding lanes to existing facilities. But studies examining that approach indicate it is only a temporary fix. They
           consistently show that adding roadway capacity in congested areas actually increases network-wide vehicle miles traveled (VMT) by a nearly equivalent proportion within a few years, reducing or negating the initial congestion relief. That
           increase in VMT is called “induced travel.”</p>
 
-        <p>The induced travel concept is not new (see the “fundamental law of highway congestion” <a href="https://trid.trb.org/view/694596">Anthony Downs suggested in 1962</a>). Indeed, it is explained by the bedrock economic principles of supply and demand: “adding capacity decreases travel
-          time, in effect lowering the ‘price’ of driving; when prices go down, the quantity of driving goes up” (<a href="https://www.arb.ca.gov/cc/sb375/policies/hwycapacity/highway_capacity_brief.pdf">Handy and Boarnet, 2014a</a>). But how big is the effect? What are the elasticities of VMT with respect to lane miles (defined as the percent
-          change in VMT divided by the percent change in lane miles)?</p>
+        <p>The induced travel concept is not new (see the “fundamental law of highway congestion” <a href="https://trid.trb.org/view/694596">Anthony Downs suggested in 1962</a>). Indeed, it is explained by the bedrock economic principles of supply
+          and demand: “adding capacity decreases travel time, in effect lowering the ‘price’ of driving; when prices go down, the quantity of driving goes up” (<a href="https://www.arb.ca.gov/cc/sb375/policies/hwycapacity/highway_capacity_brief.pdf">Handy
+            and Boarnet, 2014a</a>).</p>
 
-        <p>A slew of studies beginning in the late 1990s have estimated similar elasticities, despite using a range of methods to control other VMT-inducing factors and the bi-directional relationship between VMT and capacity expansion. In general,
-          the studies show that a 10-percent increase in capacity is likely to increase network-wide VMT by 6 to 10 percent (i.e. an elasticity of 0.6 to 1.0) in the long run (5 to 10 years), with greater elasticities for expansions of major highways
-          (e.g. on interstates) than for capacity increases on other roadways. These longer-term elasticities account for short-run shifts in travel (as people take advantage of the increased capacity and travel speed by driving more), as well as
-          longer-run dispersion of residential and business location and development.</p>
+        <p>The magnitude of the induced travel effect is commonly measured as the elasticity of VMT with respect to lane miles:</p>
+        <img width="400" height="77" class="mb-4" src="images/vmtlanemiles.png">
 
-        <p>For more information on the induced travel and other impacts of highway expansion, see Handy (<a href="www.dot.ca.gov/newtech/researchreports/reports/2015/10-12-2015-NCST_Brief_InducedTravel_CS6_v3.pdf">2015</a>) and Handy and Boarnet (2014a). For a summary of key studies estimating the elasticity of VMT with respect to lane miles, see Handy and
-          Boarnet (<a href="https://www.arb.ca.gov/cc/sb375/policies/hwycapacity/highway_capacity_bkgd.pdf">2014b</a>).</p>
+        <p>The greater the elasticity, the greater the increase in VMT from a given increase in roadway capacity. An elasticity of 1.0 indicates that a given percent increase in lane miles will cause the same percent increase in VMT. </p>
+
+        <p>Most recent studies have estimated elasticities in the same ballpark, despite using a range of methods to control for other VMT-inducing factors and the bi-directional relationship between VMT and capacity expansion. In general, the studies show that a 10-percent increase in roadway capacity is likely to increase network-wide VMT by 6 to 10 percent (an elasticity of 0.6 to 1.0) in the long run (5 to 10 years), with greater elasticities for expansions of major highways (e.g. interstates) than for capacity increases on other roadways. These longer-term elasticities account for short-run shifts in travel (as people take advantage of the increased capacity and travel speed by driving more), as well as longer-run dispersion of residential and business location and development.</p>
+
+        <p>For more information on the induced travel and other impacts of highway expansion, see Handy (<a href="www.dot.ca.gov/newtech/researchreports/reports/2015/10-12-2015-NCST_Brief_InducedTravel_CS6_v3.pdf">2015</a>) and Handy and Boarnet (2014a). For a summary of key studies estimating the elasticity of VMT with respect to lane miles, see Handy and Boarnet (<a href="https://www.arb.ca.gov/cc/sb375/policies/hwycapacity/highway_capacity_bkgd.pdf">2014b</a>).</p>
 
         <h2>Calculator Purpose and Scope</h2>
 
-        <p>This calculator allows users to estimate the annual VMT induced by adding general-purpose lane miles to interstate or state route highways in one of California’s urbanized counties (counties within a metropolitan statistical area (MSA)). To
-          obtain an induced VMT estimate for a highway capacity expansion project, users need only enter the project length (in lane miles added) and geography (MSA for interstate lane additions; county for state route projects).
+        <p>This calculator allows users to estimate the VMT induced annually as a result of adding general-purpose or high-occupancy-vehicle (HOV) lane miles to roadways managed by the California Department of Transportation (Caltrans) in one of California’s urbanized counties (counties within a metropolitan statistical area (MSA)). The calculator applies only to Caltrans-managed facilities with Federal Highway Administration (FHWA) functional classifications of 1, 2 or 3 (see <a href="http://www.dot.ca.gov/hq/tsip/hseb/func_clas.html">Caltrans, 2019</a>). That corresponds to interstate highways (class 1), other freeways and expressways (class 2), and other principal arterials (class 3). </p>
 
-        Calculator use is not appropriate in all circumstances or for all purposes, however. The following caveats apply:
-        <ul>
-          <li>The calculator is limited to use for capacity expansions. It cannot be used to estimate VMT effects of capacity reductions or lane type conversions.</li>
-          <li>The calculator is limited to use for additions of general-purpose and high-occupancy vehicle (HOV) lanes. Hundreds of both general-purpose and HOV lane mile additions were included in the two studies used to derive the elasticities for
-            the calculator <a href="https://www.aeaweb.org/articles?id=10.1257/aer.101.6.2616">(Duranton and Turner, 2011</a>; <a href="https://www.ingentaconnect.com/content/lse/jtep/2002/00000036/00000003/art00005">Cervero and Hansen, 2002</a>; <a
-              href="https://lao.ca.gov/2000/010700_hov/010700_hov_lanes.html">Legislative Analyst’s Office, 2000</a>). By contrast, only a few toll and high-occupancy toll (HOT) lanes were added to California interstates or state routes before the
-            end of the data collection periods for the two studies (see <a href="www.dot.ca.gov/trafficops/tm/docs/Caltrans_HOV-ExpressLaneBizPlan2009.pdf">Caltrans, 2009</a>). Their induced demand impacts may therefore not be accurately estimated
-            by the elasticities reported in those studies</li>
-          <li>The calculator is limited to use for lane additions on interstate highways and state route highways.</li>
-          <li>The calculator is limited to use in California’s 37 urbanized counties (<mark>counties within MSAs</mark>). The calculator cannot be used to assess the VMT effects of roadway expansions in California counties outside of MSAs, or in any geography
-            outside California. Please also be aware that there are a few MSAs (<mark>Chico, Madera, Oxnard-Thousand Oaks-Ventura, Salinas, San Luis Obispo-Paso Robles-Arroyo Grande, Santa Cruz-Watsonville, Santa Maria-Santa Barbara, Santa Rosa,
-            Visalia-Porterville and Yuba City</mark>) in which there are no interstate highways. There is also one MSA (Napa) and one county (Imperial) for which there is insufficient California Department of Transportation (Caltrans) data on interstate or
-            state route VMT, respectively, to calculate induced VMT from capacity expansions to those facilities. In those circumstances, the calculator will return an “NA”.</li>
-          <li>All estimates produced are long-run estimates of the induced VMT after 5 to 10 years. </li>
-          <li>All estimates account for the possibility that some of increased VMT on the expanded facility is traffic diverted from other types of roads in the network. In general, the studies show that “capacity expansion leads to a net increase
-            in VMT, not simply a shifting of VMT from one road to another” (Handy and Boarnet, 2014a).</li>
-        </ul>
-        <h2>Data and Elasticities</h2>
+          Calculator use is not appropriate in all circumstances or for all purposes, however. The following caveats apply:
+          <ul>
+            <li>The calculator is limited to use for capacity expansions. It cannot be used to estimate VMT effects of capacity reductions or lane type conversions.</li>
+            <li>The calculator is limited to use for additions of general-purpose and high-occupancy-vehicle lanes. It should not be used for additions of toll lanes or high-occupancy-toll (HOT) lanes. Hundreds of both general-purpose and HOV lane mile additions were included in the two studies used to derive the elasticities for the calculator <a href="https://www.aeaweb.org/articles?id=10.1257/aer.101.6.2616">(Duranton and Turner, 2011</a>; <a href="https://www.ingentaconnect.com/content/lse/jtep/2002/00000036/00000003/art00005">Cervero and Hansen, 2002</a>;
+              <a href="https://lao.ca.gov/2000/010700_hov/010700_hov_lanes.html">Legislative Analyst’s Office, 2000</a>). By contrast few toll and high-occupancy toll (HOT) lanes were added to Caltrans-managed roadways before the end of the data collection periods for the two studies (see <a href="www.dot.ca.gov/trafficops/tm/docs/Caltrans_HOV-ExpressLaneBizPlan2009.pdf">Caltrans, 2009</a>). The studies’ estimated elasticities therefore might not reflect – and this calculator should not be used to estimate – the induced travel impacts of toll and HOT lanes.</li>
+            <li>The calculator is limited to use for lane additions to Caltrans-managed roadways with FHWA functional classifications of 1, 2 or 3 (see <a href="www.dot.ca.gov/hq/tsip/hseb/func_clas.html">Caltrans, 2019</a>). See Caltrans’ <a href="https://caltrans.maps.arcgis.com/apps/webappviewer/index.html?id=026e830c914c495797c969a3e5668538">California highway system map</a> with functional class delineations.</li>
+            <li>The calculator is limited to use in California’s 37 urbanized counties (<mark>counties within MSAs</mark>). The calculator cannot be used to assess the VMT effects of roadway expansions in California counties outside of MSAs, or in any geography outside California.</li>
+            <li>Please also be aware that there are 10 MSAs (<mark>Chico, Madera, Oxnard-Thousand Oaks-Ventura, Salinas, San Luis Obispo-Paso Robles-Arroyo Grande, Santa Cruz-Watsonville, Santa Maria-Santa Barbara, Santa Rosa, Visalia-Porterville and Yuba City</mark>) in which there are no interstate highways. In addition, sufficient data are not available on baseline VMT for interstate lane miles in the Napa MSA to calculate induced VMT from interstate capacity expansions there.</li>
+            <li>The calculator produces long-run estimates of induced VMT, the additional annual VMT that could be expected 5 to 10 years after facility installation.</li>
+            <li>All estimates account for the possibility that some of increased VMT on the expanded facility is traffic diverted from other types of roads in the network. In general, the studies show that “capacity expansion leads to a net increase in VMT, not simply a shifting of VMT from one road to another” (Handy and Boarnet, 2014a).</li>
+            <li>The calculator currently uses 2016 lane mileage and VMT data. The data will be updated periodically as new data become available.</li>
+            <li>Knowledge of local conditions can help contextualize the calculator’s estimates.</li>
 
-        <p>To estimate induced VMT for user-specified capacity expansion projects, the calculator simply solves this equation:</p>
-        <h4 class="mb-3"><em>%∆ Lane Miles x Existing VMT x Elasticity = Project-Induced VMT</em></h4>
+          </ul>
+          <h2>Data and Elasticities</h2>
 
-        <p>Data sources and specifications for the equation inputs are as follows:</p>
+          <p>To estimate induced VMT for user-specified capacity expansion projects, the calculator simply solves this equation:</p>
+          <h4 class="mb-4 mt-4"><em>%∆ Lane Miles x Existing VMT x Elasticity = Project-Induced VMT</em></h4>
 
-        <p><u><strong>Lane Miles.</strong></u> The percent change in lane miles is calculated by dividing the number of project-added lane miles (input by the user) by the total lane miles of the same facility type in the same geography (using
-          Caltrans’ <a href="pems.dot.ca.gov/">Performance Measurement System</a> (PeMS) database). For interstate highways, lane mileage is calculated at the MSA level. For state routes, lane mileage is calculated at the county level. The choice of
-          geographies is discussed further below, in conjunction with elasticities.</p>
+          <p>Data sources and specifications for the equation inputs are as follows:</p>
 
-        <p><u><strong>Existing VMT.</strong></u> As with existing lane miles, existing VMT on interstate highways is calculated at the MSA level, and existing VMT on state routes is calculated at the county level, all using PeMS data.</p>
+          <p><u><strong>Lane Miles.</strong></u> The calculator uses 2016 lane mileage data from Caltrans’ <a href="http://pems.dot.ca.gov/">Performance Measurement System</a> (PeMS) database. The percent change in lane miles is calculated by dividing the number of project-added lane miles (input by the user) by the total lane miles of the same facility type in the same geography. For interstate highways (FHWA functional class 1), lane mileage is calculated at the MSA level. For other Caltrans-managed freeways, expressways and major arterials (classes 2 and 3), lane mileage is calculated at the county level. The choice of geographies is discussed further below, in conjunction with elasticities.</p>
 
-        <p><u><strong>Elasticities.</strong></u> The calculator uses an elasticity of 1.0 for lane additions to interstate highways, and an elasticity of 0.75 for lane additions to state routes.</p>
+          <p><u><strong>Existing VMT.</strong></u> As with lane mileage data, the calculator uses 2016 VMT data from the PeMS database. Existing VMT on interstate highways (FHWA functional class 1) is calculated at the MSA level, and existing VMT on other Caltrans-managed freeways, expressways and major arterials (classes 2 and 3) is calculated at the county level.</p>
 
-        <p>For <strong>interstate highways</strong>, the 1.0 elasticity derives from Duranton and Turner (2011). Duranton and Turner (2011) is the most recent major study on induced travel in the United States, and uses more recent data than other
-          studies (e.g. those reviewed in Handy and Boarnet (2014a)). The study uses data from 1983, 1993 and 2003 for all MSAs in the United States (with interstates in urbanized areas). Among other modeling, the study uses a two-stage least
-          squares regression with three instrumental variables to estimate the elasticity of vehicle kilometers traveled (VKT) on all interstate highways in MSAs (not just in urbanized areas) with respect to interstate lane kilometers. The authors
-          conclude that their estimation method better controls for the possible bi-directional relationship between VMT and lane miles than the methods used in previous studies. Using that “preferred estimation method,” their “preferred estimate”
-          is a long-run (10-year) elasticity of 1.03. However, while the authors conclude that “diversion of traffic from other road networks does not appear to play a large role,” they caution that they cannot “rule out the absence of a
-          substitution effect.” They “estimate that the diversion of traffic from other classes of roads accounts for between 0 and 10 percent of the total [induced] interstate VKT.”</p>
+          <p><u><strong>Elasticities.</strong></u> The calculator uses an elasticity of 1.0 for lane additions to interstate highways, and an elasticity of 0.75 for lane additions to state routes.</p>
 
-        <p>Like Duranton and Turner (2011), the calculator uses MSAs as the unit of analysis for interstate highway capacity expansions. The calculator also uses a similar VMT elasticity (1.0), albeit decremented to account for the (small) potential
-          substitution effect. That accords with Handy and Boarnet’s (2014a) conclusion that the best estimate for the long-run VMT elasticity for highway lane additions is close to 1.0.</p>
+          <p>For <strong>interstate highways</strong>, the 1.0 elasticity derives from Duranton and Turner (2011). Their study is the most recent major study on induced travel in the United States, and is the study that uses the most recent data. Their study used data from 1983, 1993 and 2003 for all MSAs in the United States (with interstates in urbanized areas). Among other modeling, the study used a two-stage least squares regression with three instrumental variables to estimate the elasticity of vehicle kilometers traveled (VKT) on all interstate highways in MSAs (not just in urbanized areas) with respect to interstate lane kilometers. The authors concluded that their estimation method better controls for the possible bi-directional relationship between VMT and lane miles than the methods used in previous studies. Using that “preferred estimation method,” their “preferred estimate” was a long-run (10-year) elasticity of 1.03. However, while the authors concluded that “diversion of traffic from other road networks does not appear to play a large role,” they cautioned that they could not “rule out the absence of a substitution effect.” They estimated that the “diversion of traffic from other classes of roads accounts for between 0 and 10 percent of the total [induced] interstate VKT.”</p>
 
-        <p>For <strong>state routes</strong>, the 0.75 elasticity derives from Duranton and Turner (2011) and Cervero and Hansen (2002). While Duranton and Turner (2011) could not use the authors’ preferred method to estimate elasticities for state
-          highways and other “major roads” besides interstates, its elasticity estimates using ordinary least squares regression all fall between 0.67 and 0.89. Cervero and Hansen (2002) similarly estimate an intermediate-run (5-year) VMT elasticity
-          of 0.79 for lane mile additions to state highways in California’s urbanized counties (then 34, now 37), using three-stage least squares regression. Those elasticities are similar to other longer-term elasticities calculated for combined
-          major road types (not just interstate highways) in California and across the United States (Handy and Boarnet, 2014a).</p>
+          <p>Like Duranton and Turner (2011), the calculator uses MSAs as the unit of analysis for interstate highway capacity expansions. The calculator also uses a similar VMT elasticity (1.0), albeit rounded down (in part to account for the (small) potential substitution effect). That accords with Handy and Boarnet’s (2014a) conclusion that the best estimate for the long-run VMT elasticity for highway lane additions is close to 1.0.</p>
 
-        <p>Like Cervero and Hansen (2002), and because state routes often have less regional impact than interstates (due, e.g., to lower capacity), the calculator uses urbanized counties (those within MSAs) as the unit of analysis for state route
-          capacity expansions. The calculator also uses a similar VMT elasticity for state routes (0.75) as Cervero and Hanson (2002) find for state highways (0.79), and within the range Duranton and Turner (2011) found for non-interstate “major
-          roads” in the urbanized areas of MSAs (0.67 to 0.89), albeit decremented to account for the (small) potential substitution effect discussed in Duranton and Turner (2011).</p>
+          <p>For other <strong>Caltrans-managed highways, expressways and major arterials</strong>, the 0.75 elasticity derives from Duranton and Turner (2011) and Cervero and Hansen (2002). While Duranton and Turner (2011) could not use their preferred method to estimate elasticities for state highways and other “major roads” besides interstates, their elasticity estimates using ordinary least squares regression all fall between 0.67 and 0.89. Cervero and Hansen (2002) similarly estimated an intermediate-run (5-year) VMT elasticity of 0.79 for lane mile additions to state-owned roadways in California’s urbanized counties (then 34, now 37), using three-stage least squares regression. Those elasticities are similar to other longer-term elasticities calculated for combined major road types (not just interstate highways) in California and across the United States (Handy and Boarnet, 2014a).</p>
 
-        <a href="/index.html" class="btn btn-blue mb-3">&laquo; Back to Calculator</a>
+          <p>Like Cervero and Hansen (2002), the calculator uses urbanized counties (those within MSAs) as the unit of analysis for capacity expansions on non-interstate highways, expressways and major arterials managed by Caltrans. The calculator also uses a similar VMT elasticity for those facilities (0.75) as Cervero and Hanson (2002) estimated for state-owned roadways (0.79), and within the range Duranton and Turner (2011) found for non-interstate “major roads” in the urbanized areas of MSAs (0.67 to 0.89). The calculator’s 0.75 elasticity is rounded down from the estimates of Cervero and Hanson (2002) and Duranton and Turner (2011), in part to account for the (small) potential substitution effect discussed in Duranton and Turner (2011).</p>
+
+          <h2>Questions?</h2>
+
+          <p>For questions regarding the induced VMT calculator, please contact:<br>
+          Susan Handy (<a href="mailto:slhandy@ucdavis.edu">slhandy@ucdavis.edu</a>), or<br>
+          Jamey Volker (<a href="mailto:jvolker@ucdavis.edu">jvolker@ucdavis.edu</a>)</p>
+
+
+          <a href="/index.html" class="btn btn-blue mt-2 mb-5">&laquo; Back to Calculator</a>
       </div>
     </div>
   </div>
