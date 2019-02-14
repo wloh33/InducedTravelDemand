@@ -51,17 +51,20 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8 offset-md-2 mt-4">
-          <h2>Overview</h2>
-          <p>This calculator allows users to estimate the VMT induced annually as a result of adding general-purpose or high-occupancy-vehicle (HOV) lane miles to roadways managed by the California Department of Transportation (Caltrans) in one of California’s urbanized counties (counties within a metropolitan statistical area (MSA)). The calculator applies only to Caltrans-managed facilities with Federal Highway Administration (FHWA) functional classifications of 1, 2 or 3 (see <a href="http://www.dot.ca.gov/hq/tsip/hseb/func_clas.html">Caltrans, 2019</a>). That corresponds to interstate highways (class 1), other freeways and expressways (class 2), and other principal arterials (class 3).</p>
-          
-          <p>To obtain an induced VMT estimate for a roadway capacity expansion project, enter the project length (in lane miles added) and geography (MSA for additions to interstates; county for additions to other Caltrans-managed class 2 or 3 facilities).</p>
-          
-          <p>More information on the calculator is provided in the About and Data tabs. The calculator tool is available for use below.</p>
+        <h2>Overview</h2>
+        <p>This calculator allows users to estimate the VMT induced annually as a result of adding general-purpose or high-occupancy-vehicle (HOV) lane miles to roadways managed by the California Department of Transportation (Caltrans) in one of
+          California’s urbanized counties (counties within a metropolitan statistical area (MSA)). The calculator applies only to Caltrans-managed facilities with Federal Highway Administration (FHWA) functional classifications of 1, 2 or 3 (see <a
+            href="http://www.dot.ca.gov/hq/tsip/hseb/func_clas.html">Caltrans, 2019</a>). That corresponds to interstate highways (class 1), other freeways and expressways (class 2), and other principal arterials (class 3).</p>
+
+        <p>To obtain an induced VMT estimate for a roadway capacity expansion project, enter the project length (in lane miles added) and geography (MSA for additions to interstates; county for additions to other Caltrans-managed class 2 or 3
+          facilities).</p>
+
+        <p>More information on the calculator is provided on the <a href="about">About page</a>. The calculator tool is available for use below.</p>
       </div>
     </div>
     <div class="row">
       <div class="col-md-8 offset-md-2 mt-4">
-          <h2>Calculator</h2>
+        <h2>Calculator</h2>
       </div>
     </div>
     <div class="row">
@@ -191,7 +194,8 @@
               <small>(Vehicle Miles Travelled)</small>
             </div>
             <div class="results-text">
-              <p><span class="result-value" id="geographyName"></span> currently has <span class="result-value" id="currentLaneMiles"></span> of <span id="facilityType"></span> on which <span class="result-value" id="currentVMT"></span> vehicle miles are travelled per year.</p>
+              <p><span class="result-value" id="geographyName"></span> currently has <span class="result-value" id="currentLaneMiles"></span> of <span id="facilityType"></span> on which <span class="result-value" id="currentVMT"></span> vehicle
+                miles are travelled per year.</p>
               <p>A project adding <span class="result-value" id="newLaneMiles"></span> would induce an additional <span class="result-value" id="newVMT"></span> vehicle miles travelled per year.</p>
               <div id="msaNotes"></div>
               <p><small>This calculation is using an elasticity of <span class="result-value" id="elasticity"></span>.</small></p>
@@ -199,7 +203,12 @@
             <a href="about.html" class="btn btn-small btn-secondary">Read more about this calculator</a>
           </div>
           <div class="card-body" id="resultsNone">
-            <p><span id="geographyNameNone"></span> does not have enough miles of interstate highway to use this calculator.</p>
+            <div id="resultsNoneNapa">
+            <p>We do not have enough baseline data for the Napa MSA to estimate induced VMT.</p>
+            </div>
+            <div id="resultsNoneOther">
+              <p><span id="geographyNameNone"></span> does not have enough miles of interstate highway to use this calculator.</p>
+            </div>
             <a href="about.html" class="btn btn-small btn-blue">Read more about this calculator</a>
           </div>
         </div>
