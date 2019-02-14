@@ -1,5 +1,10 @@
 var counties
 var msas
+var page = $('html, body')
+
+page.on("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove", function() {
+  page.stop()
+})
 
 function sumCounties(countyData, facilityType) {
   return countyData.reduce(function(memo, county) {
@@ -144,7 +149,8 @@ $('#vmtForm').submit(function(e) {
     $('#geographyNameNone').text(county + ' County')
   }
 
-  $('#results').slideDown();
+  $('#results').show()
+  page.animate({ scrollTop: $(document).height() }, 2000)
 })
 
 // On page load, get data
