@@ -56,6 +56,8 @@ function pluralize(singular, plural, count) {
 
 $('[name="facilityType"]').change(function() {
   var facilityType = $('[name="facilityType"]:checked').val()
+  $('#selectMSA').val('')
+  $('#selectCounty').val('')
   if (facilityType === 'class1') {
     $('#selectMSA').parents('.form-group').slideDown()
     $('#selectCounty').parents('.form-group').hide()
@@ -71,12 +73,14 @@ $('[name="facilityType"]').change(function() {
 })
 
 $('#selectMSA, #selectCounty').change(function() {
+  $('#inputLaneMiles').val('')
+
   if ($(this).val() === '') {
     $('#inputLaneMiles').parents('.form-group').hide()
-    $('#results').hide()
     return
   }
 
+  $('#results').hide()
   $('#inputLaneMiles').parents('.form-group').slideDown()
 })
 
@@ -118,11 +122,11 @@ $('#vmtForm').submit(function(e) {
   $('#resultsExist').toggle(data.laneMiles !== 0);
 
   if (msa === 'Napa') {
-    $('#resultsNoneNapa').show();
-    $('#resultsNoneOther').hide();
+    $('#resultsNoneNapa').show()
+    $('#resultsNoneOther').hide()
   } else {
-    $('#resultsNoneNapa').hide();
-    $('#resultsNoneOther').show();
+    $('#resultsNoneNapa').hide()
+    $('#resultsNoneOther').show()
   }
 
   $('#resultsMain').text(newVMT + ' million additional VMT/year')
