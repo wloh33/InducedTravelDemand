@@ -112,6 +112,14 @@ $('#vmtForm').submit(function(e) {
   $('#resultsNone').toggle(data.laneMiles === 0);
   $('#resultsExist').toggle(data.laneMiles !== 0);
 
+  if (msa === 'Napa') {
+    $('#resultsNoneNapa').show();
+    $('#resultsNoneOther').hide();
+  } else {
+    $('#resultsNoneNapa').hide();
+    $('#resultsNoneOther').show();
+  }
+
   $('#resultsMain').text(newVMT + ' million additional VMT/year')
 
   if (facilityType === 'class1') {
