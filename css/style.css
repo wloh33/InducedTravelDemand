@@ -49,8 +49,42 @@ body {
   font-size: 1rem;
 }
 
+.footer {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 22px 0;
+  font-size: 13px;
+  color: #6c757d;
+}
+
+.footer a {
+  color: #002855;
+}
+
+
 @media screen and (min-width: 768px) {
   .navbar-brand {
     font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* Sticky footer styles */
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+
+  body {
+    margin-bottom: 60px; /* Margin bottom by footer height */
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #f5f5f5;
+    text-align: center;
   }
 }
