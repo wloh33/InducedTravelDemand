@@ -100,6 +100,9 @@ $('#vmtForm').submit(function(e) {
   if (isNaN(newLaneMiles)) {
     $('#inputLaneMiles').addClass('is-invalid')
     return;
+  } else if (newLaneMiles < 0) {
+    $('#inputLaneMiles').addClass('is-invalid')
+    alert('This calculator cannot be used to estimate VMT effects of capacity reductions or lane type conversions.')
   }
 
   var countyData
