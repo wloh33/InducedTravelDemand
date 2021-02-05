@@ -158,6 +158,14 @@ $('#vmtForm').submit(function(e) {
 
   $('#results').show()
   page.animate({ scrollTop: $(document).height() }, 2000)
+
+  if (window.gtag) {
+    gtag('event', 'click', {
+      event_category: 'calculate',
+      event_label: facilityType === 'class1' ? msa : county,
+      value: newLaneMiles
+    });
+  }
 })
 
 // On page load, get data
