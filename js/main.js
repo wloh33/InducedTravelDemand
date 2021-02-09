@@ -158,11 +158,19 @@ $('#vmtForm').submit(function(e) {
 
   $('#results').show()
   page.animate({ scrollTop: $(document).height() }, 2000)
+
+  if (window.gtag) {
+    gtag('event', 'click', {
+      event_category: 'calculate',
+      event_label: facilityType === 'class1' ? msa : county,
+      value: newLaneMiles
+    });
+  }
 })
 
 // On page load, get data
-$.getJSON('data/counties.json', function(data) { counties = data })
-$.getJSON('data/msas.json', function(data) { msas = data })
+$.getJSON('/induced-travel-calculator/data/counties.json', function(data) { counties = data })
+$.getJSON('/induced-travel-calculator/data/msas.json', function(data) { msas = data })
 
 // On page load, if there is a selection, trigger change
 if ($('[name="facilityType"]:checked').val()) {
