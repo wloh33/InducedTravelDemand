@@ -169,8 +169,8 @@ $('#vmtForm').submit(function(e) {
 })
 
 // On page load, get data
-$.getJSON('/induced-travel-calculator/data/counties.json', function(data) { counties = data })
-$.getJSON('/induced-travel-calculator/data/msas.json', function(data) { msas = data })
+$.getJSON('/data/counties.json', function(data) { counties = data })
+$.getJSON('/data/msas.json', function(data) { msas = data })
 
 // On page load, if there is a selection, trigger change
 if ($('[name="facilityType"]:checked').val()) {
