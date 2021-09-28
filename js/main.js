@@ -1,4 +1,4 @@
-var counties
+var data = {}
 var msas
 var page = $('html, body')
 
@@ -21,8 +21,16 @@ function sumCounties(countyData, facilityType) {
         memo.vmt += county.vmt2
       }
 
+      if (county.vmt3) {
+        memo.vmt += county.vmt3
+      }
+
       if (county.lanemiles2) {
         memo.laneMiles += county.lanemiles2
+      }
+
+      if (county.lanemiles3) {
+        memo.laneMiles += county.lanemiles3
       }
     }
     return memo
@@ -52,6 +60,14 @@ function pluralize(singular, plural, count) {
   }
 
   return plural
+}
+
+function formatAsBillions(value) {
+  if (value > 1000) {
+    return `${Math.round(value / 100) / 10} billion`
+  }
+
+  return `${Math.round(value)} million`
 }
 
 $('#selectYear').change(function() {
@@ -107,6 +123,7 @@ $('#vmtForm').submit(function(e) {
 
   $('#results').hide()
 
+  var year = $('#selectYear').val()
   var facilityType = $('[name="facilityType"]:checked').val()
   var newLaneMiles = parseFloat($('#inputLaneMiles').val())
   var county = $('#selectCounty').val()
@@ -128,19 +145,19 @@ $('#vmtForm').submit(function(e) {
   if (facilityType === 'class1') {
     var msaData = _.find(msas, {msa: msa.toUpperCase()})
 
-    countyData = _.filter(counties, function(item) {
+    countyData = _.filter(data[year], function(item) {
       return _.includes(msaData.counties, item.county)
     })
   } else if (facilityType === 'class2-3') {
-    countyData = _.filter(counties, {county: county.toUpperCase()})
+    countyData = _.filter(data[year], {county: county.toUpperCase()})
   }
 
-  var data = sumCounties(countyData, facilityType)
+  var results = sumCounties(countyData, facilityType)
   var elasticity = facilityType === 'class1' ? 1 : 0.75
-  var newVMT = Math.round(newLaneMiles / data.laneMiles * data.vmt * elasticity * 10) / 10
+  var newVMT = Math.round(newLaneMiles / results.laneMiles * results.vmt * elasticity * 10) / 10
 
-  $('#resultsNone').toggle(data.laneMiles === 0);
-  $('#resultsExist').toggle(data.laneMiles !== 0);
+  $('#resultsNone').toggle(results.laneMiles === 0);
+  $('#resultsExist').toggle(results.laneMiles !== 0);
 
   if (msa === 'Napa') {
     $('#resultsNoneNapa').show()
@@ -151,12 +168,13 @@ $('#vmtForm').submit(function(e) {
   }
 
   $('#resultsMain').text(newVMT + ' million additional VMT/year')
+  $('#yearName').text(year)
 
   if (facilityType === 'class1') {
     $('#geographyName').text(msa + ' MSA')
     $('#facilityType').text('Interstate highway')
-    $('#currentLaneMiles').text(data.laneMiles + ' lane miles')
-    $('#currentVMT').text(data.vmt + ' million')
+    $('#currentLaneMiles').text(Math.round(results.laneMiles) + ' lane miles')
+    $('#currentVMT').text(formatAsBillions(results.vmt))
     $('#elasticity').text('1.0')
     $('#newLaneMiles').text(newLaneMiles + ' lane miles')
     $('#newVMT').text(newVMT + ' million')
@@ -165,8 +183,8 @@ $('#vmtForm').submit(function(e) {
   } else if (facilityType === 'class2-3') {
     $('#geographyName').text(county + ' County')
     $('#facilityType').text('Caltrans-managed class 2 and 3 facilities')
-    $('#currentLaneMiles').text(data.laneMiles + ' lane miles')
-    $('#currentVMT').text(data.vmt + ' million')
+    $('#currentLaneMiles').text(results.laneMiles + ' lane miles')
+    $('#currentVMT').text(results.vmt + ' million')
     $('#elasticity').text('0.75')
     $('#newLaneMiles').text(newLaneMiles + ' lane miles')
     $('#newVMT').text(newVMT + ' million')
@@ -187,8 +205,11 @@ $('#vmtForm').submit(function(e) {
 })
 
 // On page load, get data
-$.getJSON('/data/counties.json', function(data) { counties = data })
-$.getJSON('/data/msas.json', function(data) { msas = data })
+$.getJSON('/data/data-2019.json', function(response) { data['2019'] = response })
+$.getJSON('/data/data-2018.json', function(response) { data['2018'] = response })
+$.getJSON('/data/data-2017.json', function(response) { data['2017'] = response })
+$.getJSON('/data/data-2016.json', function(response) { data['2016'] = response })
+$.getJSON('/data/msas.json', function(response) { msas = response })
 
 // On page load, if there is a selection, trigger change
 if ($('[name="facilityType"]:checked').val()) {
