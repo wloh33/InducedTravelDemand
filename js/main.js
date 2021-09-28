@@ -54,10 +54,28 @@ function pluralize(singular, plural, count) {
   return plural
 }
 
+$('#selectYear').change(function() {
+  $('#selectMSA').val('')
+  $('#selectCounty').val('')
+  $('#facilityTypeClass1').prop('checked', false)
+  $('#facilityTypeClass2-3').prop('checked', false)
+
+  $('#facilityTypeClass1').parents('.form-group').slideDown()
+  $('#selectCounty').parents('.form-group').hide()
+  $('#selectMSA').parents('.form-group').hide()
+
+  $('#inputLaneMiles')
+    .val('')
+    .parents('.form-group').hide()
+
+  $('#results').hide()
+})
+
 $('[name="facilityType"]').change(function() {
   var facilityType = $('[name="facilityType"]:checked').val()
   $('#selectMSA').val('')
   $('#selectCounty').val('')
+  console.log(facilityType)
   if (facilityType === 'class1') {
     $('#selectMSA').parents('.form-group').slideDown()
     $('#selectCounty').parents('.form-group').hide()
