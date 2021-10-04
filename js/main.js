@@ -64,10 +64,14 @@ function pluralize(singular, plural, count) {
 
 function formatAsBillions(value) {
   if (value > 1000) {
-    return `${Math.round(value / 100) / 10} billion`
+    return `${roundToOneDecimal(value / 1000)} billion`
   }
 
   return `${Math.round(value)} million`
+}
+
+function roundToOneDecimal(value) {
+  return Math.round(value * 10 ) / 10
 }
 
 $('#selectYear').change(function() {
@@ -154,7 +158,7 @@ $('#vmtForm').submit(function(e) {
 
   var results = sumCounties(countyData, facilityType)
   var elasticity = facilityType === 'class1' ? 1 : 0.75
-  var newVMT = Math.round(newLaneMiles / results.laneMiles * results.vmt * elasticity * 10) / 10
+  var newVMT = roundToOneDecimal(newLaneMiles / results.laneMiles * results.vmt * elasticity)
 
   $('#resultsNone').toggle(results.laneMiles === 0);
   $('#resultsExist').toggle(results.laneMiles !== 0);
@@ -173,7 +177,7 @@ $('#vmtForm').submit(function(e) {
   if (facilityType === 'class1') {
     $('#geographyName').text(msa + ' MSA')
     $('#facilityType').text('Interstate highway')
-    $('#currentLaneMiles').text(Math.round(results.laneMiles) + ' lane miles')
+    $('#currentLaneMiles').text(roundToOneDecimal(results.laneMiles) + ' lane miles')
     $('#currentVMT').text(formatAsBillions(results.vmt))
     $('#elasticity').text('1.0')
     $('#newLaneMiles').text(newLaneMiles + ' lane miles')
@@ -183,8 +187,8 @@ $('#vmtForm').submit(function(e) {
   } else if (facilityType === 'class2-3') {
     $('#geographyName').text(county + ' County')
     $('#facilityType').text('Caltrans-managed class 2 and 3 facilities')
-    $('#currentLaneMiles').text(results.laneMiles + ' lane miles')
-    $('#currentVMT').text(results.vmt + ' million')
+    $('#currentLaneMiles').text(roundToOneDecimal(results.laneMiles) + ' lane miles')
+    $('#currentVMT').text(formatAsBillions(results.vmt) + ' million')
     $('#elasticity').text('0.75')
     $('#newLaneMiles').text(newLaneMiles + ' lane miles')
     $('#newVMT').text(newVMT + ' million')
