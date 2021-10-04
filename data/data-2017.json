@@ -4,9 +4,9 @@
     "lanemiles1": 953.34,
     "lanemiles2": 128.58,
     "lanemiles3": 864.48,
-    "vmt1": "7,930.37",
+    "vmt1": 7930.37,
     "vmt2": 786.41,
-    "vmt3": "2,121.87"
+    "vmt3": 2121.87
   },
   {
     "county": "ALPINE",
@@ -58,9 +58,9 @@
     "lanemiles1": 362.89,
     "lanemiles2": 249.66,
     "lanemiles3": 750.4,
-    "vmt1": "2,767.43",
-    "vmt2": "1,945.74",
-    "vmt3": "1,790.14"
+    "vmt1": 2767.43,
+    "vmt2": 1945.74,
+    "vmt3": 1790.14
   },
   {
     "county": "DEL NORTE",
@@ -86,8 +86,8 @@
     "lanemiles2": 381.98,
     "lanemiles3": 799.08,
     "vmt1": 946.81,
-    "vmt2": "2,068.29",
-    "vmt3": "1,266.11"
+    "vmt2": 2068.29,
+    "vmt3": 1266.11
   },
   {
     "county": "GLENN",
@@ -129,10 +129,10 @@
     "county": "KERN",
     "lanemiles1": 387.34,
     "lanemiles2": 759.78,
-    "lanemiles3": "1,368.11",
-    "vmt1": "1,344.29",
-    "vmt2": "2,405.38",
-    "vmt3": "1,907.11"
+    "lanemiles3": 1368.11,
+    "vmt1": 1344.29,
+    "vmt2": 2405.38,
+    "vmt3": 1907.11
   },
   {
     "county": "KINGS",
@@ -163,12 +163,12 @@
   },
   {
     "county": "LOS ANGELES",
-    "lanemiles1": "2,759.20",
-    "lanemiles2": "1,709.85",
-    "lanemiles3": "7,618.56",
-    "vmt1": "23,670.96",
-    "vmt2": "13,572.48",
-    "vmt3": "19,199.84"
+    "lanemiles1": 2759.2,
+    "lanemiles2": 1709.85,
+    "lanemiles3": 7618.56,
+    "vmt1": 23670.96,
+    "vmt2": 13572.48,
+    "vmt3": 19199.84
   },
   {
     "county": "MADERA",
@@ -185,7 +185,7 @@
     "lanemiles2": 229.75,
     "lanemiles3": 91.07,
     "vmt1": 175.51,
-    "vmt2": "1,502.00",
+    "vmt2": 1502,
     "vmt3": 219.29
   },
   {
@@ -239,7 +239,7 @@
     "lanemiles2": 494.2,
     "lanemiles3": 254.14,
     "vmt1": "",
-    "vmt2": "1,591.60",
+    "vmt2": 1591.6,
     "vmt3": 720.1
   },
   {
@@ -264,17 +264,17 @@
     "county": "ORANGE",
     "lanemiles1": 755.87,
     "lanemiles2": 900.69,
-    "lanemiles3": "3,319.56",
-    "vmt1": "6,687.69",
-    "vmt2": "6,059.41",
-    "vmt3": "7,698.10"
+    "lanemiles3": 3319.56,
+    "vmt1": 6687.69,
+    "vmt2": 6059.41,
+    "vmt3": 7698.1
   },
   {
     "county": "PLACER",
     "lanemiles1": 325.46,
     "lanemiles2": 43.05,
     "lanemiles3": 219.05,
-    "vmt1": "1,391.76",
+    "vmt1": 1391.76,
     "vmt2": 250.57,
     "vmt3": 475.22
   },
@@ -289,21 +289,21 @@
   },
   {
     "county": "RIVERSIDE",
-    "lanemiles1": "1,302.97",
+    "lanemiles1": 1302.97,
     "lanemiles2": 366.99,
-    "lanemiles3": "1,012.95",
-    "vmt1": "7,035.62",
-    "vmt2": "2,931.75",
-    "vmt3": "2,258.75"
+    "lanemiles3": 1012.95,
+    "vmt1": 7035.62,
+    "vmt2": 2931.75,
+    "vmt3": 2258.75
   },
   {
     "county": "SACRAMENTO",
     "lanemiles1": 354.6,
     "lanemiles2": 390.06,
-    "lanemiles3": "1,186.89",
-    "vmt1": "2,472.21",
-    "vmt2": "2,888.75",
-    "vmt3": "2,579.31"
+    "lanemiles3": 1186.89,
+    "vmt1": 2472.21,
+    "vmt2": 2888.75,
+    "vmt3": 2579.31
   },
   {
     "county": "SAN BENITO",
@@ -316,21 +316,21 @@
   },
   {
     "county": "SAN BERNARDINO",
-    "lanemiles1": "1,976.97",
+    "lanemiles1": 1976.97,
     "lanemiles2": 383.48,
-    "lanemiles3": "1,710.02",
-    "vmt1": "8,520.25",
-    "vmt2": "2,657.29",
-    "vmt3": "3,074.36"
+    "lanemiles3": 1710.02,
+    "vmt1": 8520.25,
+    "vmt2": 2657.29,
+    "vmt3": 3074.36
   },
   {
     "county": "SAN DIEGO",
-    "lanemiles1": "1,686.77",
+    "lanemiles1": 1686.77,
     "lanemiles2": 702.87,
-    "lanemiles3": "1,311.23",
-    "vmt1": "11,580.44",
-    "vmt2": "4,748.74",
-    "vmt3": "3,109.87"
+    "lanemiles3": 1311.23,
+    "vmt1": 11580.44,
+    "vmt2": 4748.74,
+    "vmt3": 3109.87
   },
   {
     "county": "SAN FRANCISCO",
@@ -346,9 +346,9 @@
     "lanemiles1": 402.24,
     "lanemiles2": 248.18,
     "lanemiles3": 741.49,
-    "vmt1": "2,011.23",
-    "vmt2": "1,436.33",
-    "vmt3": "1,254.03"
+    "vmt1": 2011.23,
+    "vmt2": 1436.33,
+    "vmt3": 1254.03
   },
   {
     "county": "SAN LUIS OBISPO",
@@ -356,7 +356,7 @@
     "lanemiles2": 280.52,
     "lanemiles3": 216.57,
     "vmt1": "",
-    "vmt2": "1,359.86",
+    "vmt2": 1359.86,
     "vmt3": 437.16
   },
   {
@@ -364,8 +364,8 @@
     "lanemiles1": 246.15,
     "lanemiles2": 323.87,
     "lanemiles3": 276.27,
-    "vmt1": "1,431.60",
-    "vmt2": "2,637.41",
+    "vmt1": 1431.6,
+    "vmt2": 2637.41,
     "vmt3": 697.98
   },
   {
@@ -374,17 +374,17 @@
     "lanemiles2": 400.87,
     "lanemiles3": 324.67,
     "vmt1": "",
-    "vmt2": "1,580.80",
+    "vmt2": 1580.8,
     "vmt3": 486.27
   },
   {
     "county": "SANTA CLARA",
     "lanemiles1": 340.99,
     "lanemiles2": 639.88,
-    "lanemiles3": "1,389.93",
-    "vmt1": "2,546.28",
-    "vmt2": "4,787.24",
-    "vmt3": "3,703.00"
+    "lanemiles3": 1389.93,
+    "vmt1": 2546.28,
+    "vmt2": 4787.24,
+    "vmt3": 3703
   },
   {
     "county": "SANTA CRUZ",
@@ -427,7 +427,7 @@
     "lanemiles1": 463.93,
     "lanemiles2": 36.24,
     "lanemiles3": 356.45,
-    "vmt1": "3,043.67",
+    "vmt1": 3043.67,
     "vmt2": 173.52,
     "vmt3": 666.44
   },
@@ -437,7 +437,7 @@
     "lanemiles2": 278.17,
     "lanemiles3": 143.57,
     "vmt1": "",
-    "vmt2": "1,606.57",
+    "vmt2": 1606.57,
     "vmt3": 411.92
   },
   {
@@ -482,7 +482,7 @@
     "lanemiles2": 298.47,
     "lanemiles3": 416.6,
     "vmt1": "",
-    "vmt2": "1,376.85",
+    "vmt2": 1376.85,
     "vmt3": 587.66
   },
   {
@@ -500,15 +500,15 @@
     "lanemiles2": 431.38,
     "lanemiles3": 878.84,
     "vmt1": "",
-    "vmt2": "2,890.55",
-    "vmt3": "1,787.06"
+    "vmt2": 2890.55,
+    "vmt3": 1787.06
   },
   {
     "county": "YOLO",
     "lanemiles1": 302.05,
     "lanemiles2": 48.16,
     "lanemiles3": 111.05,
-    "vmt1": "1,210.35",
+    "vmt1": 1210.35,
     "vmt2": 119.79,
     "vmt3": 170.77
   },
