@@ -61,6 +61,15 @@ body {
   color: #002855;
 }
 
+.question {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.answer {
+  padding-bottom: 20px;
+}
+
 
 @media screen and (min-width: 768px) {
   .navbar-brand {

@@ -65,8 +65,94 @@
   <div class="container">
     <div class="row">
       <div class="offset-md-2 col-md-8 mt-md-5 mt-2">
-        <h2>Frequently Asked Questions</h2>
-        <p>Coming Soon</p>
+        <h2 class="mb-3">Frequently Asked Questions</h2>
+        
+        <div class="question">Does the Calculator estimate induced VMT in the short term or longer term?</div>
+        <div class="answer">The Calculator produces longer-run estimates of induced VMT – the additional annual VMT that could be expected across the regional network 3 to 10 years after facility installation. Volker and Handy (<a href="https://escholarship.org/uc/item/1hh9b9mf">2022</a>) discuss the short- and longer-run induced travel effects in more detail and summarize the best available estimates of both short- and longer-run elasticities from the empirical studies.</div>
+
+        <div class="question">Can the Calculator be used to estimate VMT changes due to capacity reductions?</div>
+        <div class="answer">No, the Calculator cannot yet be used to estimate the VMT effects of capacity reductions. However, our best estimate based on the area-wide econometric studies of induced VMT is that the effects of capacity reductions are symmetric with the effects of capacity increases. That is supported by the available evidence from facility-level studies, which do not provide elasticity estimates but indicate that capacity reductions generally reduce traffic volumes both on the treated road and in the surrounding area (<a href="https://www.cycling-embassy.org.uk/sites/cycling-embassy.org.uk/files/documents/Traffic%20Impact%20of%20Highway%20Capacity%20Reductions-%20Assessment%20of%20the%20Evidence.pdf">Cairns et al., 2002</a>).</div>
+
+        <div class="question">Can the Calculator be used for managed lane (HOV, HOT, toll) expansions?</div>
+        <div class="answer">The Calculator can be used to estimate induced VMT from additions of general-purpose lanes, HOV lanes, and HOT lanes. It should not be used to estimate induced VMT from additions of pure toll lanes without supplemental analysis. As documented in Volker and Handy (<a href="https://escholarship.org/uc/item/1hh9b9mf">2022</a>), the available empirical evidence suggests that new HOV and HOT lanes might have similar induced travel effects as general-purpose lane expansions.</div>
+
+        <div class="question">What types of roadways can the Calculator be used for?</div>
+        <div class="answer">
+          <p>The Federal Highway Administration (FHWA) uses a seven-level system to classify roadways according to their function, starting with interstate highways (class 1) and ending with the lowest-capacity and lowest-speed roads – local roads (class 7):</p>
+          <ul>
+            <li>Class 1 – Interstate highways</li>
+            <li>Class 2 – Other freeways and expressways</li>
+            <li>Class 3 – Other principal arterials</li>
+            <li>Class 4 – Minor arterials</li>
+            <li>Class 5 – Major collectors</li>
+            <li>Class 6 – Minor collectors</li>
+            <li>Class 7 – Local roads </li>
+          </ul>  
+
+          <p>The Calculator currently only applies directly to publicly owned facilities (like those managed by Caltrans) with FHWA functional classifications of 1, 2, or 3. That does not mean that expansions of class 4, 5, 6, or 7 facilities do not induce travel. They do. For example, the available evidence indicates that the induced travel elasticity for class 4 minor arterials is likely similar to that of class 1-3 facilities. However, because there is less empirical research on class 4-7 facilities, as detailed in Volker and Handy (<a href="https://escholarship.org/uc/item/1hh9b9mf">2022</a>), they are not yet included in the Calculator.</p>
+        </div>
+        <div class="question">How can I determine the type (functional classification) of a given roadway?</div>
+        <div class="answer">Caltrans maintains a <a href="https://caltrans.maps.arcgis.com/apps/webappviewer/index.html?id=026e830c914c495797c969a3e5668538">map of California’s roadways</a> with functional class delineations.</div>
+
+        <div class="question">Is the induced travel elasticity different for different roadway types (functional classifications)?</div>
+        <div class="answer">
+          <p>The empirical research indicates a longer-run induced travel elasticity of close to 1.0 for class 1, 2, 3, and 4 facilities, albeit a potentially greater elasticity for expansions of class 1 facilities than class 2-4 roadways. The induced travel elasticities are likely lower for class 5 and 6 facilities, and lowest for class 7 facilities.</p>
+
+          <p>Based on the empirical research, the Calculator conservatively uses an elasticity of 1.0 for capacity expansions on interstate highways, and an elasticity of 0.75 for capacity expansions on class 2 or 3 facilities.</p>
+
+          <p>See Volker and Handy (<a href="https://escholarship.org/uc/item/1hh9b9mf">2022</a>) for more detail.</p>
+        </div>
+        <div class="question">Can the Calculator be used for projects in rural areas?</div>
+        <div class="answer">Induced travel can and would still be expected to happen in rural areas wherever an expansion project increases the average travel speed on the roadway (regardless of initial congestion levels), improves travel time reliability, makes driving on the roadway perceptibly safer or less stressful, and/or provides access to previously inaccessible areas. Indeed, the empirical research suggests that induced travel occurs in both urban and more rural areas, but that the elasticities might be slightly smaller in rural areas, especially in the short run. That said, the Calculator remains limited to use in California’s 37 urbanized counties (counties within MSAs), since urbanized counties, urbanized areas, and MSAs were the units of observation and analysis used in the most relevant studies summarized in Volker and Handy (<a href="https://escholarship.org/uc/item/1hh9b9mf">2022</a>).</div>
+
+        <div class="question">Do existing levels of traffic congestion affect the induced travel elasticity?</div>
+        <div class="answer">
+          <p>Induced travel does not only occur in congested areas. Induced travel can be expected to occur wherever an expansion project increases the average travel speed on the roadway (at least in the short term), improves travel time reliability, makes driving on the roadway perceptibly safer or less stressful, or provides access to previously inaccessible areas, all of which reduce the perceived “cost” of driving and thereby induce more driving. The limited available evidence indicates that metropolitan areas with higher baseline levels of traffic congestion could potentially have lower elasticities than metro areas with less congestion, possibly because pervasive regional congestion limits the travel time savings from any particular capacity expansion (at least smaller-scale ones). However, there is not enough empirical evidence to justify using different elasticities in the Calculator based on initial congestion levels.</p>
+          <p>That said, the Calculator inherently accounts for differences in traffic densities between geographies by using geography-specific baseline data for VMT and lane miles. While the calculator uses the same elasticities for every region, it would estimate more total induced VMT for a given increase in lane miles in areas with higher baseline VMT per lane mile.</p>
+          <p>See Volker and Handy (<a href="https://escholarship.org/uc/item/1hh9b9mf">2022</a>) for more detail.</p>
+        </div>
+        <div class="question">Is the induced travel elasticity different for projects that expand capacity where there is a traffic “bottleneck”?</div>
+        <div class="answer">There is not enough empirical evidence to justify using a different elasticity in the Calculator for projects where there is a traffic bottleneck. In theory, the induced travel effect might be greater for projects that expand capacity where there is a true bottleneck, since there can be a greater relative reduction in travel time (and thus perceived “cost” of driving) than for projects that expand capacity for just a portion of a uniformly congested roadway. However, the reduction in travel time depends on how congested the rest of the roadway network is.</div>
+
+        <div class="question">Is the induced travel elasticity lower for shorter capacity expansions?</div>
+        <div class="answer">There is not enough empirical evidence to justify using different elasticities in the Calculator for different project lengths. However, the Calculator’s induced VMT estimates inherently account for the project length since the estimates are proportional to the percentage increase in facility capacity, and a longer project means a greater percentage increase in facility capacity.</div>
+
+        <div class="question">Is freight (heavy duty) VMT included in the Calculator’s induced VMT estimates?</div>
+        <div class="answer">Yes, the Calculator’s induced VMT estimates include total VMT from both light- and heavy-duty traffic.</div>
+
+        <div class="question">Does the Calculator’s induced VMT estimates account for diverted trips?</div>
+        <div class="answer">
+          <p>A key question in determining the induced travel effect size is whether increased VMT on the expanded roadways is partially offset by decreases in VMT on other roads (i.e., where VMT is effectively diverted from other roads). The few studies that have attempted to quantify this have found at most a minimal substitution effect (<a href="https://www.aeaweb.org/articles?id=10.1257/aer.101.6.2616">Duranton & Turner, 2011</a>; <a href="https://www.sciencedirect.com/science/article/pii/S0965856496000195?via%3Dihub">Hansen & Huang, 1997</a>; <a href="https://www.sciencedirect.com/science/article/pii/S0301421511006446?via%3Dihub">Rentiziou et al., 2012</a>). Duranton and Turner (<a href="https://www.aeaweb.org/articles?id=10.1257/aer.101.6.2616">2011</a>), for example, estimated that the diversion of traffic from other major roadways (classes 2-6) accounts for between 0-10% of the total increase in interstate highway VKT resulting from an interstate capacity expansion.</p>
+          <p>All of the Calculator’s induced VMT estimates account for the possibility that a small portion of the increased VMT on the expanded facility is traffic diverted from other types of roads in the network. The 1.0 elasticity used for capacity expansions on interstate highways and the 0.75 elasticity used for capacity expansions on class 2 or 3 facilities are both slightly rounded down from the relevant estimates from the empirical research in part to account for the small potential substitution effects.</p>
+          <p>See Volker and Handy (<a href="https://escholarship.org/uc/item/1hh9b9mf">2022</a>) for more detail.</p>
+        </div>
+        <div class="question">Where do the elasticities used by the Calculator come from?</div>
+        <div class="answer">The elasticities used by the Calculator are derived from peer-reviewed empirical studies. The <a href="/about.html">About page</a> and Volker and Handy (<a href="https://escholarship.org/uc/item/1hh9b9mf">2022</a>) provide more details. Volker and Handy (<a href="https://escholarship.org/uc/item/1hh9b9mf">2022</a>) also review and summarize the relevant literature.</div>
+
+        <div class="question">Do the studies from which the elasticities used by the Calculator are taken control for factors such as population growth and economic changes?</div>
+        <div class="answer">
+          <p>Yes. Every relevant study reviewed in Volker and Handy (<a href="https://escholarship.org/uc/item/1hh9b9mf">2022</a>) controlled for factors affecting VMT other than roadway capacity. For example, nearly every study controlled in some form for population and income, half the studies controlled for fuel cost, and one quarter controlled for elements of physical geography. More than half the studies also included regional and/or year fixed effects in their regression models to capture the effects on VMT of unmeasured variables associated with a specific region or time period. Every study also attempted to correct for the endogeneity of roadway capacity – the possibility that VMT growth can cause roadway capacity expansion and not just the other way around.</p>
+
+          <p>See Volker and Handy (<a href="https://escholarship.org/uc/item/1hh9b9mf">2022</a>) for more detail.</p>
+        </div>
+        <div class="question">Will the elasticities used by the Calculator be updated as new empirical research becomes available?</div>
+        <div class="answer">
+          <p>Yes. We monitor the induced travel literature for new empirical research. Volker and Handy (<a href="https://escholarship.org/uc/item/1hh9b9mf">2022</a>) provide our most recent review of literature. </p>
+
+          <p>We encourage users to send us any additional research that they are aware of. Please direct information and inquiries to Jamey Volker (<a href="mailto:jvolker@ucdavis.edu">jvolker@ucdavis.edu</a>).</p>
+        </div>
+        <div class="question">Is the Calculator’s VMT and lane mile data publicly available?</div>
+        <div class="answer">Yes. The lane mile data is available as a downloadable spreadsheet <a href="https://travelcalculator.ncst.ucdavis.edu/downloads/Induced-Travel-Calculator-Data.xlsx">here</a>. The VMT data is available as a downloadable spreadsheet <a href="https://travelcalculator.ncst.ucdavis.edu/downloads/Induced-Travel-Calculator-Data.xlsx">here</a>.</div>
+
+        <div class="question">How often will the Calculator’s VMT and lane mile data be updated?</div>
+        <div class="answer">The Calculator currently allows users to choose baseline data from 2016, 2017, 2018, or 2019. Data from 2020 is excluded because of the shock to statewide travel demand that year from COVID-19 and the resulting risk that using 2020 VMT data in the Calculator would underestimate induced VMT from capacity expansion projects. Additional years of data will be added periodically as it becomes available and as travel demand rebounds to a new normal in the COVID-19 era.</div>
+
+        <div class="question">Which California counties are “urbanized counties”?</div>
+        <div class="answer">There are 37 urbanized counties in California, i.e., counties within metropolitan statistical areas (MSAs). A complete list is provided <a href="https://travelcalculator.ncst.ucdavis.edu/downloads/MSA-List.xlsx">here</a>.</div>
+
+        <div class="question">What are the metropolitan statistical areas used by the Calculator?</div>
+        <div class="answer">There are 26 MSAs in California. A complete list, along with the constituent counties is provided <a href="https://travelcalculator.ncst.ucdavis.edu/downloads/MSA-List.xlsx">here</a>.</div>
+
       </div>
     </div>
   </div>
