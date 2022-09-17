@@ -71,7 +71,7 @@ function formatAsBillions(value) {
 }
 
 function roundToOneDecimal(value) {
-  return Math.round(value * 10 ) / 10
+  return (Math.round(value * 10 ) / 10).toFixed(1)
 }
 
 $('#selectYear').change(function() {
@@ -159,6 +159,9 @@ $('#vmtForm').submit(function(e) {
   var results = sumCounties(countyData, facilityType)
   var elasticity = facilityType === 'class1' ? 1 : 0.75
   var newVMT = roundToOneDecimal(newLaneMiles / results.laneMiles * results.vmt * elasticity)
+  var newVMTLowConfidence = roundToOneDecimal(newVMT * 0.8)
+  var newVMTHighConfidence = roundToOneDecimal(newVMT * 1.2)
+  var currentLaneMiles = roundToOneDecimal(results.laneMiles)
 
   $('#resultsNone').toggle(results.laneMiles === 0);
   $('#resultsExist').toggle(results.laneMiles !== 0);
@@ -177,21 +180,23 @@ $('#vmtForm').submit(function(e) {
   if (facilityType === 'class1') {
     $('#geographyName').text(msa + ' MSA')
     $('#facilityType').text('Interstate highway')
-    $('#currentLaneMiles').text(roundToOneDecimal(results.laneMiles) + ' lane miles')
+    $('#currentLaneMiles').text(currentLaneMiles + ' lane miles')
     $('#currentVMT').text(formatAsBillions(results.vmt))
     $('#elasticity').text('1.0')
     $('#newLaneMiles').text(newLaneMiles + ' lane miles')
     $('#newVMT').text(newVMT + ' million')
+    $('#newVMTConfidence').text(`${newVMTLowConfidence} - ${newVMTHighConfidence} million VMT`)
     $('#msaNotes').html('<p><small>' + msa + ' MSA consists of ' + countyData.length + ' ' + pluralize('county','counties', countyData.length) + ' (' + formatCountyList(countyData) + ').</small></p>')
     $('#geographyNameNone').text(msa + ' MSA')
   } else if (facilityType === 'class2-3') {
     $('#geographyName').text(county + ' County')
     $('#facilityType').text('Caltrans-managed class 2 and 3 facilities')
-    $('#currentLaneMiles').text(roundToOneDecimal(results.laneMiles) + ' lane miles')
+    $('#currentLaneMiles').text(currentLaneMiles + ' lane miles')
     $('#currentVMT').text(formatAsBillions(results.vmt) + ' million')
     $('#elasticity').text('0.75')
     $('#newLaneMiles').text(newLaneMiles + ' lane miles')
     $('#newVMT').text(newVMT + ' million')
+    ('#newVMTConfidence').text(`${newVMTLowConfidence} - ${newVMTHighConfidence} million VMT`)
     $('#msaNotes').html('')
     $('#geographyNameNone').text(county + ' County')
   }
