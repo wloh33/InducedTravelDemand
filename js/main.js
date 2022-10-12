@@ -95,7 +95,7 @@ $('[name="facilityType"]').change(function() {
   var facilityType = $('[name="facilityType"]:checked').val()
   $('#selectMSA').val('')
   $('#selectCounty').val('')
-  console.log(facilityType)
+
   if (facilityType === 'class1') {
     $('#selectMSA').parents('.form-group').slideDown()
     $('#selectCounty').parents('.form-group').hide()
@@ -103,6 +103,7 @@ $('[name="facilityType"]').change(function() {
     $('#selectCounty').parents('.form-group').slideDown()
     $('#selectMSA').parents('.form-group').hide()
   }
+
   $('#inputLaneMiles')
     .val('')
     .parents('.form-group').hide()
@@ -196,7 +197,7 @@ $('#vmtForm').submit(function(e) {
     $('#elasticity').text('0.75')
     $('#newLaneMiles').text(newLaneMiles + ' lane miles')
     $('#newVMT').text(newVMT + ' million')
-    ('#newVMTConfidence').text(`${newVMTLowConfidence} - ${newVMTHighConfidence} million VMT`)
+    $('#newVMTConfidence').text(`${newVMTLowConfidence} - ${newVMTHighConfidence} million VMT`)
     $('#msaNotes').html('')
     $('#geographyNameNone').text(county + ' County')
   }
