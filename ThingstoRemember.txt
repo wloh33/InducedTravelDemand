@@ -1,0 +1,1 @@
+I changed msa to counties in msas.json file to avoid changing too much of the original codes while ensuring that the calculation reflects county-level information instead of MSA information. 
