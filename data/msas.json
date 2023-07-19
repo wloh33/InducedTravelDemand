@@ -1,129 +1,46 @@
 [
   {
-    "msa": "BAKERSFIELD",
-    "counties": ["KERN"]
+    "msa": "New York-Jersey City-White Plains",
+    "counties": ["Bergen","Hudson","Passaic"]
   },
   {
-    "msa": "CHICO",
-    "counties": ["BUTTE"]
+    "msa": "Edison",
+    "counties": ["Middlesex","Monmouth","Ocean","Somerset"]
   },
   {
-    "msa": "EL CENTRO",
-    "counties": ["IMPERIAL"]
+    "msa": "Newark-Union",
+    "counties": ["Essex","Hunterdon","Morris","Sussex","Union"]
   },
   {
-    "msa": "FRESNO",
-    "counties": ["FRESNO"]
+    "msa": "Mercer",
+    "counties": ["Mercer"]
   },
   {
-    "msa": "HANFORD-CORCORAN",
-    "counties": ["KINGS"]
+    "msa": "Warren",
+    "counties": ["Warren"]
   },
   {
-    "msa": "LOS ANGELES-LONG BEACH-ANAHEIM",
+    "msa": "Camden",
     "counties": [
-      "LOS ANGELES",
-      "ORANGE"
+      "Burlington",
+      "Camden", 
+      "Gloucester"
     ]
   },
   {
-    "msa": "MADERA",
-    "counties": ["MADERA"]
+    "msa": "Salem",
+    "counties": ["Salem"]
   },
   {
-    "msa": "MERCED",
-    "counties": ["MERCED"]
+    "msa": "Atlantic City-Hammonton",
+    "counties": ["Atlantic"]
   },
   {
-    "msa": "MODESTO",
-    "counties": ["STANISLAUS"]
+    "msa": "Vineland-Bridgeton",
+    "counties": ["Cumberland"]
   },
   {
-    "msa": "NAPA",
-    "counties": ["NAPA"]
-  },
-  {
-    "msa": "OXNARD-THOUSAND OAKS-VENTURA",
-    "counties": ["VENTURA"]
-  },
-  {
-    "msa": "REDDING",
-    "counties": ["SHASTA"]
-  },
-  {
-    "msa": "RIVERSIDE-SAN BERNARDINO-ONTARIO",
-    "counties": [
-      "RIVERSIDE",
-      "SAN BERNARDINO"
-    ]
-  },
-  {
-    "msa": "SACRAMENTO-ROSEVILLE-ARDEN-ARCADE",
-    "counties": [
-      "EL DORADO",
-      "PLACER",
-      "SACRAMENTO",
-      "YOLO"
-    ]
-  },
-  {
-    "msa": "SALINAS",
-    "counties": ["MONTEREY"]
-  },
-  {
-    "msa": "SAN DIEGO-CARLSBAD",
-    "counties": ["SAN DIEGO"]
-  },
-  {
-    "msa": "SAN FRANCISCO-OAKLAND-HAYWARD",
-    "counties": [
-      "SAN FRANCISCO",
-      "SAN MATEO",
-      "ALAMEDA",
-      "CONTRA COSTA",
-      "MARIN"
-    ]
-  },
-  {
-    "msa": "SAN JOSE-SUNNYVALE-SANTA CLARA",
-    "counties": [
-      "SAN BENITO",
-      "SANTA CLARA"
-    ]
-  },
-  {
-    "msa": "SAN LUIS OBISPO-PASO ROBLES-ARROYO GRANDE",
-    "counties": ["SAN LUIS OBISPO"]
-  },
-  {
-    "msa": "SANTA CRUZ-WATSONVILLE",
-    "counties": ["SANTA CRUZ"]
-  },
-  {
-    "msa": "SANTA MARIA-SANTA BARBARA",
-    "counties": ["SANTA BARBARA"]
-  },
-  {
-    "msa": "SANTA ROSA",
-    "counties": ["SONOMA"]
-  },
-  {
-    "msa": "STOCKTON-LODI",
-    "counties": ["SAN JOAQUIN"]
-  },
-  {
-    "msa": "VALLEJO-FAIRFIELD",
-    "counties": ["SOLANO"]
-  },
-  {
-    "msa": "VISALIA-PORTERVILLE",
-    "counties": ["TULARE"]
-  },
-  {
-    "msa": "YUBA CITY",
-    "counties": [
-      "SUTTER",
-      "YUBA"
-    ]
+    "msa": "Ocean City",
+    "counties": ["Cape May"]
   }
 ]
