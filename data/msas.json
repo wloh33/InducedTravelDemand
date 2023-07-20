@@ -12,11 +12,11 @@
     "counties": ["Essex","Hunterdon","Morris","Sussex","Union"]
   },
   {
-    "msa": "Mercer",
+    "msa": "Trenton-Princeton",
     "counties": ["Mercer"]
   },
   {
-    "msa": "Warren",
+    "msa": "Allentown-Bethlehem-Easton",
     "counties": ["Warren"]
   },
   {
@@ -28,7 +28,7 @@
     ]
   },
   {
-    "msa": "Salem",
+    "msa": "Wilmington",
     "counties": ["Salem"]
   },
   {
