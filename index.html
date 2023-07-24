@@ -35,9 +35,7 @@
   <div>
     <div class="container mt-1 mb-1">
       <a href="https://vtc.rutgers.edu/">
-        <img src="/images
-/EJBSPPPAMVTC1_RED_GRAY.png
-" width="100" height="30" />
+        <img src="/images/EJBSPPPAMVTC1_RED_GRAY.png" width="100" height="30" />
       </a>
     </div>
   </div>
@@ -109,13 +107,55 @@
                 <div class="form-check">
                   <input class="form-check-input" type="radio" id="facilityTypeClass1" name="facilityType" value="class1">
                   <label class="form-check-label" for="facilityTypeClass1">
-                    Interstate highway (class 1 facility)
+                    Urban interstate, freeway/expressway 
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" id="facilityTypeClass2-3" name="facilityType" value="class2-3">
-                  <label class="form-check-label" for="facilityTypeClass2-3">
-                    Class 2 or 3 facility
+                  <input class="form-check-input" type="radio" id="facilityTypeClass2" name="facilityType" value="class2">
+                  <label class="form-check-label" for="facilityTypeClass2">
+                    Urban principal arterial 
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="radio" id="facilityTypeClass3" name="facilityType" value="class3">
+                  <label class="form-check-label" for="facilityTypeClass3">
+                    Urban minor arterial 
+                  </label>
+                </div>
+                 <div class="form-check">
+                  <input class="form-check-input" type="radio" id="facilityTypeClass4" name="facilityType" value="class4">
+                  <label class="form-check-label" for="facilityTypeClass4">
+                    Urban collector
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" id="facilityTypeClass5" name="facilityType" value="class5">
+                  <label class="form-check-label" for="facilityTypeClass5">
+                    Urban local road
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" id="facilityTypeClass6" name="facilityType" value="class6">
+                  <label class="form-check-label" for="facilityTypeClass6">
+                    Rural interstate and principal arterial
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" id="facilityTypeClass7" name="facilityType" value="class7">
+                  <label class="form-check-label" for="facilityTypeClass7">
+                    Rural minor arterial
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" id="facilityTypeClass8" name="facilityType" value="class8">
+                  <label class="form-check-label" for="facilityTypeClass8">
+                    Rural major and minor collector
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" id="facilityTypeClass9" name="facilityType" value="class9">
+                  <label class="form-check-label" for="facilityTypeClass9">
+                    Rural local road
                   </label>
                 </div>
               </div>
@@ -125,43 +165,27 @@
                 </label>
                 <select class="form-control form-control-lg" id="selectCounty">
                   <option value="">Select County</option>
-                  <option>Alameda</option>
-                  <option>Butte</option>
-                  <option>Contra Costa</option>
-                  <option>El Dorado</option>
-                  <option>Fresno</option>
-                  <option>Imperial</option>
-                  <option>Kern</option>
-                  <option>Kings</option>
-                  <option>Los Angeles</option>
-                  <option>Madera</option>
-                  <option>Marin</option>
-                  <option>Merced</option>
-                  <option>Monterey</option>
-                  <option>Napa</option>
-                  <option>Orange</option>
-                  <option>Placer</option>
-                  <option>Riverside</option>
-                  <option>Sacramento</option>
-                  <option>San Benito</option>
-                  <option>San Bernardino</option>
-                  <option>San Diego</option>
-                  <option>San Francisco</option>
-                  <option>San Joaquin </option>
-                  <option>San Luis Obispo</option>
-                  <option>San Mateo</option>
-                  <option>Santa Barbara</option>
-                  <option>Santa Clara</option>
-                  <option>Santa Cruz</option>
-                  <option>Shasta</option>
-                  <option>Solano</option>
-                  <option>Sonoma</option>
-                  <option>Stanislaus</option>
-                  <option>Sutter</option>
-                  <option>Tulare</option>
-                  <option>Ventura</option>
-                  <option>Yolo</option>
-                  <option>Yuba</option>
+                  <option>Atlantic</option>
+                  <option>Bergen</option>
+                  <option>Burlington</option>
+                  <option>Camden</option>
+                  <option>Cape May</option>
+                  <option>Cumberland</option>
+                  <option>Essex</option>
+                  <option>Gloucester</option>
+                  <option>Hudson</option>
+                  <option>Hunterdon</option>
+                  <option>Mercer</option>
+                  <option>Middlesex</option>
+                  <option>Monmouth</option>
+                  <option>Morris</option>
+                  <option>Ocean</option>
+                  <option>Passaic</option>
+                  <option>Salem</option>
+                  <option>Somerset</option>
+                  <option>Sussex</option>
+                  <option>Union</option>
+                  <option>Warren</option>
                 </select>
               </div>
               <div class="form-group mt-4" style="display: none;">
@@ -170,32 +194,16 @@
                 </label>
                 <select class="form-control form-control-lg" id="selectMSA">
                   <option value="">Select MSA</option>
-                  <option>Bakersfield</option>
-                  <option>Chico</option>
-                  <option>El Centro</option>
-                  <option>Fresno</option>
-                  <option>Hanford-Corcoran</option>
-                  <option>Los Angeles-Long Beach-Anaheim</option>
-                  <option>Madera</option>
-                  <option>Merced</option>
-                  <option>Modesto</option>
-                  <option>Napa</option>
-                  <option>Oxnard-Thousand Oaks-Ventura</option>
-                  <option>Redding</option>
-                  <option>Riverside-San Bernardino-Ontario</option>
-                  <option>Sacramento-Roseville-Arden-Arcade</option>
-                  <option>Salinas</option>
-                  <option>San Diego-Carlsbad</option>
-                  <option>San Francisco-Oakland-Hayward</option>
-                  <option>San Jose-Sunnyvale-Santa Clara</option>
-                  <option>San Luis Obispo-Paso Robles-Arroyo Grande</option>
-                  <option>Santa Cruz-Watsonville</option>
-                  <option>Santa Maria-Santa Barbara</option>
-                  <option>Santa Rosa</option>
-                  <option>Stockton-Lodi</option>
-                  <option>Vallejo-Fairfield</option>
-                  <option>Visalia-Porterville</option>
-                  <option>Yuba City</option>
+                  <option>New York-Jersey City-White Plains</option>
+                  <option>Edison</option>
+                  <option>Newark-Union</option>
+                  <option>Trenton-Princeton</option>
+                  <option>Allentown-Bethlehem-Easton</option>
+                  <option>Camden</option>
+                  <option>Wilmington</option>
+                  <option>Atlantic City-Hammonton</option>
+                  <option>Vineland-Bridgeton</option>
+                  <option>Ocean City</option>
                 </select>
               </div>
               <div class="form-group mt-4" style="display: none;">
